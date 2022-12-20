@@ -1,0 +1,22 @@
+logo As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =98
+    Width: =405
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    companyName As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 13, 75, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =98
+        Size: =60
+        Text: ="Astral"
+        Width: =405
+        ZIndex: =2
+

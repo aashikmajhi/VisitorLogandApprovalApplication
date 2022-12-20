@@ -1,0 +1,53 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-11-07T21:40:49.8190000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "Employee_x0020_Name": "Employee Name",
+      "Gender": "Gender",
+      "Gender#Id": "Gender Id",
+      "ID": "ID",
+      "Modified": "Modified",
+      "Reason_x0020_For_x0020_Visit": "Reason For Visit",
+      "Reason_x0020_For_x0020_Visit#Id": "Reason For Visit Id",
+      "Symptoms": "Symptoms",
+      "Title": "Title",
+      "Visit_x0020_Status": "Visit Status",
+      "Visit_x0020_Status#Id": "Visit Status Id",
+      "Visitor_x0020_Company": "Visitor Company",
+      "Visitor_x0020_Name": "Visitor Name"
+    },
+    "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Visitor Request",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

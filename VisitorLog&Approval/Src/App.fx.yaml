@@ -1,0 +1,18 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(
+            varUser,
+            User()
+        );
+        Set(
+            isUserAdminSPList,
+            !IsBlank(
+                LookUp(
+                    'Security Control',
+                    Admin.Email = varUser.Email
+                )
+            )
+        )
+    StartScreen: =MainScreen
+
