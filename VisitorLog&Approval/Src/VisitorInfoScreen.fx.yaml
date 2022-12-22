@@ -537,7 +537,7 @@ VisitorInfoScreen As screen:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(32, 54, 71, 1)
-                Items: =["Yes", "No"]
+                Items: =["Yes","No"]
                 RadioBorderColor: =RGBA(32, 54, 71, 1)
                 Size: =13
                 Tooltip: =If(!IsBlank(symptoms.Selected), false, "Are you having the listed symptoms?")

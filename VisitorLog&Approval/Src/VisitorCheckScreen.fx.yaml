@@ -681,7 +681,7 @@ VisitorCheckScreen As screen:
             symptomsRadio As radio:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =ThisItem.Symptoms
+                Default: =symptoms.Selected.Value
                 DisabledColor: =RGBA(22, 38, 50, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
