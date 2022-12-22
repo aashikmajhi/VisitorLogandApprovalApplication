@@ -1,20 +1,20 @@
 MainScreen As screen:
-    BackgroundImage: ='3274418'
+    BackgroundImage: ='Background Image'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     appName As label:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(9, 33, 98, 1)
+        Color: =RGBA(39, 113, 194, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Lato Black'
+        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =74
-        Size: =40
+        Size: =45
         Text: ="Visitor Application"
-        Width: =474
-        X: =87
-        Y: =181
+        Width: =555
+        X: =79
+        Y: =163
         ZIndex: =3
 
     newVisitor As button:
@@ -95,7 +95,7 @@ MainScreen As screen:
         ZIndex: =6
 
     logo_1 As logo:
-        X: =121
-        Y: =61
+        X: =139
+        Y: =75
         ZIndex: =7
 

@@ -74,7 +74,14 @@
           "VerticalAlign",
           "X",
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Height",
           "DisplayMode",
           "ZIndex",
@@ -139,7 +146,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "45",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -193,7 +200,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "405",
+            "InvariantScript": "370",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -259,7 +266,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Font.'Patrick Hand'",
+            "InvariantScript": "Font.'Segoe UI'",
             "Property": "Font",
             "RuleProviderType": "Unknown"
           },
@@ -301,7 +308,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 13, 75, 1)",
+            "InvariantScript": "RGBA(39, 113, 194, 1)",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -393,7 +400,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638072965894241287",
+    "LastModifiedTimestamp": "638073044512906432",
     "Name": "logo",
     "Rules": [
       {
@@ -416,9 +423,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "405",
+        "InvariantScript": "370",
         "Property": "Width",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -452,7 +459,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638072965894241287",
+  "LastModifiedTimestamp": "638073044512906432",
   "Name": "9c3bab715be14b0e8f6e1546d785303a",
   "OverridableProperties": {},
   "Version": "638047824090253934"

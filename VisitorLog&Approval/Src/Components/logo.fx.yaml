@@ -1,7 +1,7 @@
 logo As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =98
-    Width: =405
+    Width: =370
     X: =0
     Y: =0
     ZIndex: =1
@@ -10,13 +10,13 @@ logo As CanvasComponent:
         Align: =Align.Center
         BorderColor: =RGBA(0, 18, 107, 1)
         BorderStyle: =BorderStyle.None
-        Color: =RGBA(0, 13, 75, 1)
+        Color: =RGBA(39, 113, 194, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Patrick Hand'
+        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =98
-        Size: =60
+        Size: =45
         Text: ="Astral"
-        Width: =405
+        Width: =370
         ZIndex: =2
 

@@ -1,5 +1,5 @@
 VisitorInfoScreen As screen:
-    BackgroundImage: ='3274387'
+    BackgroundImage: ='Background Image'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
@@ -547,8 +547,7 @@ VisitorInfoScreen As screen:
 
     logo_3 As logo:
         Width: =453
-        X: =25
-        Y: =27
+        Y: =37
         ZIndex: =2
 
     visitorSearchByPhone As text:

@@ -1,5 +1,6 @@
 NewVisitorScreen As screen:
-    BackgroundImage: ='3274387'
+    BackgroundImage: ='Background Image'
+    Fill: =RGBA(0, 0, 0, 0)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
@@ -18,11 +19,12 @@ NewVisitorScreen As screen:
         ZIndex: =3
 
     btnSubmit As button:
+        BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(215, 223, 240, 1)
+        Fill: =RGBA(210, 215, 218, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold

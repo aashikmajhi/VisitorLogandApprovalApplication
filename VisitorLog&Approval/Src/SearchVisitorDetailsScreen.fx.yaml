@@ -1,5 +1,5 @@
 SearchVisitorDetailsScreen As screen:
-    BackgroundImage: ='3274387'
+    BackgroundImage: ='Background Image'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
@@ -171,7 +171,7 @@ SearchVisitorDetailsScreen As screen:
 
     logo_4 As logo:
         Width: =453
-        Y: =10
+        Y: =30
         ZIndex: =12
 
     Rectangle1 As rectangle:

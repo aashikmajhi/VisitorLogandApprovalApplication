@@ -1,5 +1,5 @@
 VisitorCheckScreen As screen:
-    BackgroundImage: ='3274387'
+    BackgroundImage: ='Background Image'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
@@ -697,7 +697,7 @@ VisitorCheckScreen As screen:
     logo_5 As logo:
         Width: =453
         X: =8
-        Y: =18
+        Y: =38
         ZIndex: =8
 
     btnSubmit_3 As button:

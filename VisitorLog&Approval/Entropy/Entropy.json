@@ -165,7 +165,7 @@
   "DoesTestStepsMetadataExist": false,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/22/2022 09:26:08",
+  "HeaderLastSavedDateTimeUTC": "12/22/2022 11:20:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3018d7c2-94f3-4903-9547-1bd06155626b": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/072a7fa6c6714e29b6bec794f28596cd\"",
@@ -174,24 +174,10 @@
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
-    "3274387": "d54e6a0d-7f7d-47ac-8eaf-eae1e83848e5.jpg",
-    "3274416": "2746109f-57bb-4b6a-a5c6-d0336a5cc15e.jpg",
-    "3274418": "68c0e5ae-f2b1-48c9-95d6-bd5216b044ea.jpg",
-    "388350": "64c50d7b-73f1-478c-b93d-73b89de4282f.png",
-    "blue-1142743_960_720": "371a5c0a-67c7-4118-88c0-2b84b0c494c1.jpg",
-    "iautomatix-Logo-Gradient-3": "d6ff3697-b5a4-43bc-a97e-814dedbe13cb.png",
-    "pexels-karolina-grabowska-4862892": "0e26579d-96b9-4d5f-bd4c-28dbd478cb7c.jpg",
-    "pexels-lukas-1420709": "ec08fde6-f946-4503-9c24-3b254d7cd66a.jpg"
+    "Background Image": "72e03a3c-8325-47a4-b107-d178a0bb37d6.png"
   },
   "LocalResourceRootPaths": {
-    "3274387": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images0d54e6a0d-7f7d-47ac-8eaf-eae1e83848e5.jpg?sv=2017-04-17&sr=b&sig=IxRc%2BmCgxhyFUWryuB%2FICfm5fDe2tfFitYrP4HZpAws%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "3274416": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images02746109f-57bb-4b6a-a5c6-d0336a5cc15e.jpg?sv=2017-04-17&sr=b&sig=Cb3Xxmr%2BSffXrNslamiiQU25vV4Lirx0Re4MIjzKPvI%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "3274418": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images068c0e5ae-f2b1-48c9-95d6-bd5216b044ea.jpg?sv=2017-04-17&sr=b&sig=94NAvZEMrriwVMQrawBhOMLFX%2BsT7s4fDXhvxKl5a6M%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "388350": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images064c50d7b-73f1-478c-b93d-73b89de4282f.png?sv=2017-04-17&sr=b&sig=dFsbEfwibmV7SV66fvj2%2FN0ZSdbGn740w%2FSCP%2B%2F5CtQ%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "blue-1142743_960_720": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images0371a5c0a-67c7-4118-88c0-2b84b0c494c1.jpg?sv=2017-04-17&sr=b&sig=h23SydklP1ifuPVzOyblH%2BLlYirbQrj87%2BT%2FbAXAcNY%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "iautomatix-Logo-Gradient-3": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images0d6ff3697-b5a4-43bc-a97e-814dedbe13cb.png?sv=2017-04-17&sr=b&sig=vb46bnVKTWBh89K3biloeCRpOQL27GK7tvZGiXSecqQ%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "pexels-karolina-grabowska-4862892": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images00e26579d-96b9-4d5f-bd4c-28dbd478cb7c.jpg?sv=2017-04-17&sr=b&sig=QBq%2Frlt3DVPaQLQ3PoZMI3p5zG93bliJPeAYVVN13r8%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r",
-    "pexels-lukas-1420709": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/Assets0Images0ec08fde6-f946-4503-9c24-3b254d7cd66a.jpg?sv=2017-04-17&sr=b&sig=K6Ub9U7GOC3Ev%2B14EYtIATUVxWyRKxDqIZFKOD%2F9L8E%3D&spr=https&se=2022-12-23T09%3A18%3A08Z&sp=r"
+    "Background Image": "https://docserverpwaprodseas.blob.core.windows.net/2c4eace9-0312-4021-9509-8a44d3b603ef-1/resource/a40c25fc-069b-4493-b94e-89656d30ac9e.png?sv=2017-04-17&sr=b&sig=E9iISawxPOk57JA0DoJGEMhXlStklyo4nSxWFhvrrvc%3D&spr=https&se=2022-12-23T11%3A19%3A29Z&sp=r"
   },
   "OrderComponentMetadata": {
     "9c3bab715be14b0e8f6e1546d785303a": 0
@@ -534,14 +520,7 @@
     "whomVisited": 121
   },
   "ResourcesJsonIndices": {
-    "Image-3274387": 8,
-    "Image-3274416": 7,
-    "Image-3274418": 6,
-    "Image-388350": 5,
-    "Image-blue-1142743_960_720": 4,
-    "Image-iautomatix-Logo-Gradient-3": 1,
-    "Image-pexels-karolina-grabowska-4862892": 2,
-    "Image-pexels-lukas-1420709": 3,
+    "Image-Background Image": 1,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
