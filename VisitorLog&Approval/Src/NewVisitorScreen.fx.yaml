@@ -581,7 +581,7 @@ NewVisitorScreen As screen:
                 VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =56
                 ZIndex: =2
 
             ErrorMessage6 As label:

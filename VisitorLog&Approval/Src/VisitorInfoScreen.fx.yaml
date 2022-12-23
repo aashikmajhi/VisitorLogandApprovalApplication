@@ -550,7 +550,8 @@ VisitorInfoScreen As screen:
 
     logo_3 As logo:
         Width: =453
-        Y: =37
+        X: =12
+        Y: =44
         ZIndex: =2
 
     visitorSearchByPhone As text:
@@ -601,7 +602,7 @@ VisitorInfoScreen As screen:
             )
         Reset: =true
         Size: =13
-        X: =269
+        X: =278
         Y: =186
         ZIndex: =3
 
