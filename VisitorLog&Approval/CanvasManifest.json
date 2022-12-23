@@ -103,10 +103,10 @@
   },
   "PublishInfo": {
     "AppName": "Visitor Log and Approval App",
-    "BackgroundColor": "RGBA(0,176,240,1)",
+    "BackgroundColor": "rgba(255, 255, 255, 1)",
     "IconColor": "RGBA(255,255,255,1)",
-    "IconName": "Edit",
-    "LogoFileName": "",
+    "IconName": "",
+    "LogoFileName": "logo.jpg",
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",

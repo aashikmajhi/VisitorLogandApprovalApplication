@@ -165,7 +165,7 @@
   "DoesTestStepsMetadataExist": false,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/23/2022 06:09:34",
+  "HeaderLastSavedDateTimeUTC": "12/23/2022 06:24:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3018d7c2-94f3-4903-9547-1bd06155626b": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/072a7fa6c6714e29b6bec794f28596cd\"",
@@ -179,6 +179,7 @@
   "LocalResourceRootPaths": {
     "Background Image": "https://docserverpwaprodeas.blob.core.windows.net/b3ae437d-6fe1-4c4d-800d-b9d3e6d60bf1-1/resource/Assets0Images072e03a3c-8325-47a4-b107-d178a0bb37d6.png?sv=2017-04-17&sr=b&sig=kXsJpFX4sCtL60fq6jqCAJJqjAMbsrvqL1MU1tUJXtw%3D&spr=https&se=2022-12-24T05%3A26%3A26Z&sp=r"
   },
+  "OldLogoFileName": "x1q50sm1.jpg",
   "OrderComponentMetadata": {
     "9c3bab715be14b0e8f6e1546d785303a": 0
   },
