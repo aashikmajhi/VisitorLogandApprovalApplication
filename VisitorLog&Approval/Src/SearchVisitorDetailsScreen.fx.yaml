@@ -187,7 +187,7 @@ SearchVisitorDetailsScreen As screen:
     Gallery1 As gallery.galleryVertical:
         BorderThickness: =3
         Height: =455
-        Items: =SortByColumns(Filter('Visitor Request', 'Employee Name'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending)
+        Items: =SortByColumns(Filter('Visitor Request', StartsWith('Employee Name', searchVisitedEmployee.Selected.DisplayName) || DatePicker1.SelectedDate = Created), "Created", Descending)
         Layout: =Layout.Vertical
         TemplateSize: =80
         Width: =1332
@@ -293,7 +293,7 @@ SearchVisitorDetailsScreen As screen:
             Height: =42
             OnSelect: =Select(Parent)
             Size: =13
-            Text: =ThisItem.'Employee Name'
+            Text: =ThisItem.'Visitor Name'
             Width: =208
             Wrap: =false
             X: =672
@@ -331,7 +331,7 @@ SearchVisitorDetailsScreen As screen:
             Height: =42
             OnSelect: =Select(Parent)
             Size: =13
-            Text: =ThisItem.'Visit Status'.Value
+            Text: =ThisItem.Gender.Value
             Width: =142
             Wrap: =false
             X: =1099
@@ -348,4 +348,32 @@ SearchVisitorDetailsScreen As screen:
             X: =1260
             Y: =5
             ZIndex: =9
+
+    DatePicker1 As datepicker:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        HoverDateFill: =RGBA(205, 209, 213, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        OnSelect: =
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Tooltip: =
+        Width: =150
+        X: =1092
+        Y: =186
+        ZIndex: =15
+
+    Label5 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Filter By Date"
+        Width: =125
+        X: =969
+        Y: =186
+        ZIndex: =16
 

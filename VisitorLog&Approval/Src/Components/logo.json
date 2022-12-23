@@ -124,7 +124,7 @@
         "Name": "companyName",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 141,
+        "PublishOrderIndex": 143,
         "Rules": [
           {
             "Category": "Data",
