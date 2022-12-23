@@ -400,7 +400,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638073044512906432",
+    "LastModifiedTimestamp": "638073690871972022",
     "Name": "logo",
     "Rules": [
       {
@@ -425,7 +425,7 @@
         "Category": "Design",
         "InvariantScript": "370",
         "Property": "Width",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -459,7 +459,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638073044512906432",
+  "LastModifiedTimestamp": "638073690871972022",
   "Name": "9c3bab715be14b0e8f6e1546d785303a",
   "OverridableProperties": {},
   "Version": "638047824090253934"
