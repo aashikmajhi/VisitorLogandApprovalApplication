@@ -134,8 +134,8 @@ VisitorInfoScreen As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =33
+                Y: =27
                 ZIndex: =1
 
             visitorName As text:
@@ -144,7 +144,7 @@ VisitorInfoScreen As screen:
                 Color: =RGBA(0, 0, 0, 1)
                 Default: |-
                     =If(
-                       !IsBlank(visitorSearchByPhone.Text),
+                       !IsBlank(visitorSearchByPhone.Text) && Len(visitorSearchByPhone.Text)>8,
                        With(
                           {
                              wResult: 
@@ -259,7 +259,7 @@ VisitorInfoScreen As screen:
                 Color: =RGBA(0, 0, 0, 1)
                 Default: |-
                     =If(
-                       !IsBlank(visitorSearchByPhone.Text),
+                       !IsBlank(visitorSearchByPhone.Text) && Len(visitorSearchByPhone.Text)>8,
                        With(
                           {
                              wResult: 
@@ -385,17 +385,20 @@ VisitorInfoScreen As screen:
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
-                Height: =50
+                Height: =57
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
+                InputTextPlaceholder: ="Reason For Visit"
+                IsSearchable: =false
                 Items: =Choices([@'Visitor Request'].'Reason For Visit')
+                NoSelectionText: ="Reason For Your Visit"
                 OnSelect: =true
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 Reset: =true
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Visitor Request'.'Reason For Visit',reason.SearchText)
+                SearchItems: =[]
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -685,7 +688,7 @@ VisitorInfoScreen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["DisplayName"]
-        Height: =50
+        Height: =57
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
         InputTextPlaceholder: ="Employee To Visit"
@@ -700,8 +703,8 @@ VisitorInfoScreen As screen:
         SelectionFill: =RGBA(100, 118, 132, 1)
         SelectMultiple: =false
         Size: =13
-        Width: =581
-        X: =70
+        Width: =587
+        X: =64
         Y: =406
         ZIndex: =9
 

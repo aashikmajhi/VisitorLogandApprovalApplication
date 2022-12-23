@@ -56,7 +56,6 @@ MainScreen As screen:
         OnSelect: |-
             =Reset(visitorSearchByPhone);
             Reset([@employeeList]);
-            Reset(reason);
             ResetForm(regularVisitorsDetail);
             Navigate(VisitorInfoScreen);
         RadiusBottomLeft: =9

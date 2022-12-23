@@ -476,6 +476,7 @@ VisitorCheckScreen As screen:
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =ThisItem.Gender.Value
                 DisabledColor: =RGBA(22, 38, 50, 1)
+                DisplayMode: =DisplayMode.View
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =69
@@ -538,12 +539,13 @@ VisitorCheckScreen As screen:
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
+                IsSearchable: =false
                 Items: =Choices([@'Visitor Request'].'Visit Status')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Visitor Request'.'Visit Status',DataCardValue23.SearchText)
+                SearchItems: =[]
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -683,6 +685,7 @@ VisitorCheckScreen As screen:
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =symptoms.Selected.Value
                 DisabledColor: =RGBA(22, 38, 50, 1)
+                DisplayMode: =DisplayMode.View
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 HoverColor: =RGBA(32, 54, 71, 1)
