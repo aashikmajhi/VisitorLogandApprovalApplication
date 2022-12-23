@@ -557,6 +557,7 @@ NewVisitorScreen As screen:
             visitorPhoneNumber As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
+                Clear: =true
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -577,6 +578,7 @@ NewVisitorScreen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =13
+                VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5

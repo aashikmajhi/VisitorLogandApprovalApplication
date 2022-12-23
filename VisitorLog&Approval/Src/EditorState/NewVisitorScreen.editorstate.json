@@ -8702,7 +8702,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "VirtualKeyboardMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "VirtualKeyboardMode.Auto",
+          "InvariantPropertyName": "VirtualKeyboardMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DelayOutput",
         "DisabledBorderColor",
         "PressedBorderColor",
@@ -8744,6 +8751,14 @@
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "HintText",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Clear",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -8984,6 +8999,11 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Clear",
           "RuleProviderType": "Unknown"
         }
       ],
