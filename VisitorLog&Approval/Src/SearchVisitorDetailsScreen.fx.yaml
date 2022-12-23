@@ -342,7 +342,9 @@ SearchVisitorDetailsScreen As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             Fill: =Switch(ThisItem.'Visit Status'.Value,"Visit Completed",Green,"Pending Security Check",Red,"Security Check Completed",Blue)
-            OnSelect: =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);Navigate(VisitorCheckScreen)
+            OnSelect: |-
+                =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
+                If(visitStatus.Text =! "Visit Completed",Navigate(VisitorCheckScreen));
             X: =1260
             Y: =5
             ZIndex: =9

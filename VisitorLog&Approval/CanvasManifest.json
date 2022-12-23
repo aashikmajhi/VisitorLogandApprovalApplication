@@ -98,11 +98,11 @@
     "Id": "07eefa1a-873c-4d2e-8579-158a897427fa",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Visitor Log and Approval App",
+    "Name": "Visitor Log App",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "Visitor Log and Approval App",
+    "AppName": "Visitor Log App",
     "BackgroundColor": "rgba(255, 255, 255, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",
