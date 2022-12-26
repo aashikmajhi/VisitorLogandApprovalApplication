@@ -109,6 +109,6 @@ MainScreen As screen:
         ImagePosition: =ImagePosition.Fill
         Width: =751
         X: =615
-        Y: =195
+        Y: =196
         ZIndex: =9
 
