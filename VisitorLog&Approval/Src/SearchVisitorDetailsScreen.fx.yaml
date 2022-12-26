@@ -58,14 +58,14 @@ SearchVisitorDetailsScreen As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         InputTextPlaceholder: ="Search Employee"
         Items: |-
-            =Office365Users.SearchUser({ searchTerm:searchVisitedEmployee.SearchText })
+            =Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText})
         NoSelectionText: =
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         Reset: =true
         SearchFields: =["DisplayName"]
         SearchItems: |-
-            =Search(Office365Users.SearchUser({ searchTerm:searchVisitedEmployee.SearchText }),searchVisitedEmployee.SearchText,"DisplayName")
+            =Search(Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText}),searchVisitedEmployee.SearchText,"DisplayName")
         SelectionFill: =RGBA(100, 118, 132, 1)
         SelectMultiple: =false
         Size: =13
@@ -187,8 +187,9 @@ SearchVisitorDetailsScreen As screen:
     Gallery1 As gallery.galleryVertical:
         BorderThickness: =3
         Height: =455
-        Items: =SortByColumns(Filter('Visitor Request', StartsWith('Employee Name', searchVisitedEmployee.Selected.DisplayName) || DatePicker1.SelectedDate = Created), "Created", Descending)
+        Items: =SortByColumns(Filter('Visitor Request', StartsWith('Employee Name', searchVisitedEmployee.Selected.DisplayName) || Created>=DatePicker1.SelectedDate && Created<=DatePicker2.SelectedDate,1,Days), "Created", Ascending)
         Layout: =Layout.Vertical
+        ShowScrollbar: =false
         TemplateSize: =80
         Width: =1332
         X: =12
@@ -293,7 +294,7 @@ SearchVisitorDetailsScreen As screen:
             Height: =42
             OnSelect: =Select(Parent)
             Size: =13
-            Text: =ThisItem.'Visitor Name'
+            Text: =ThisItem.'Employee Name'
             Width: =208
             Wrap: =false
             X: =672
@@ -358,22 +359,54 @@ SearchVisitorDetailsScreen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         HoverDateFill: =RGBA(205, 209, 213, 1)
         IconBackground: =RGBA(100, 118, 132, 1)
-        OnSelect: =
+        OnChange: =true
+        OnSelect: =true
         SelectedDateFill: =RGBA(100, 118, 132, 1)
         Tooltip: =
         Width: =150
-        X: =1092
+        X: =972
         Y: =186
         ZIndex: =15
 
     Label5 As label:
+        Align: =Align.Right
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
-        Text: ="Filter By Date"
-        Width: =125
-        X: =969
+        Text: ="Date From"
+        Width: =100
+        X: =869
         Y: =186
         ZIndex: =16
+
+    DatePicker2 As datepicker:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        HoverDateFill: =RGBA(205, 209, 213, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        OnChange: =true
+        OnSelect: =true
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Tooltip: =
+        Width: =150
+        X: =1186
+        Y: =186
+        ZIndex: =17
+
+    Label5_1 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="To"
+        Width: =55
+        X: =1129
+        Y: =186
+        ZIndex: =18
 
