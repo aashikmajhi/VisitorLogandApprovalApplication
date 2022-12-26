@@ -6,7 +6,6 @@
     "companyName_4": 6,
     "companyName_5": 6,
     "Home Design": 7,
-    "Home Design_1": 7,
     "logo": 5,
     "logo_1": 5
   },
@@ -82,11 +81,11 @@
     "Gender_DataCard1": 93,
     "Gender_DataCard3": 135,
     "Home Design": 163,
-    "Home Design_1": 165,
     "homeicon": 70,
     "homeicon_1": 34,
     "homeicon_2": 7,
     "homeicon_3": 112,
+    "Image1": 166,
     "infoLbl": 71,
     "infoLbl_1": 35,
     "infoLbl_2": 8,
@@ -177,7 +176,7 @@
   "DoesTestStepsMetadataExist": false,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/26/2022 05:10:29",
+  "HeaderLastSavedDateTimeUTC": "12/26/2022 05:16:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3018d7c2-94f3-4903-9547-1bd06155626b": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/072a7fa6c6714e29b6bec794f28596cd\"",
@@ -186,10 +185,12 @@
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
-    "Background Image": "72e03a3c-8325-47a4-b107-d178a0bb37d6.png"
+    "Background Image": "72e03a3c-8325-47a4-b107-d178a0bb37d6.png",
+    "ez-visit": "1f0fa7d4-d7c3-4b88-b33d-b0d77f5f4381.png"
   },
   "LocalResourceRootPaths": {
-    "Background Image": "https://docserverpwaprodeas.blob.core.windows.net/e9dc35a5-8f1f-4b46-95fb-72b1c3ea881c-1/resource/Assets0Images072e03a3c-8325-47a4-b107-d178a0bb37d6.png?sv=2017-04-17&sr=b&sig=Q%2FAcRjwBHF83GHpYDYZN4hLdJacBVrWVHmkjR6p5BeY%3D&spr=https&se=2022-12-27T03%3A36%3A16Z&sp=r"
+    "Background Image": "https://docserverpwaprodeas.blob.core.windows.net/e9dc35a5-8f1f-4b46-95fb-72b1c3ea881c-1/resource/Assets0Images072e03a3c-8325-47a4-b107-d178a0bb37d6.png?sv=2017-04-17&sr=b&sig=Q%2FAcRjwBHF83GHpYDYZN4hLdJacBVrWVHmkjR6p5BeY%3D&spr=https&se=2022-12-27T03%3A36%3A16Z&sp=r",
+    "ez-visit": "https://docserverpwaprodeas.blob.core.windows.net/e9dc35a5-8f1f-4b46-95fb-72b1c3ea881c-1/resource/ae80dccb-639d-48af-a47b-04a47501cce6.png?sv=2017-04-17&sr=b&sig=x2oKE3Fc7Gh0Pc99RGI7pMw0QwYo1VgknhpDRjjPKo4%3D&spr=https&se=2022-12-27T05%3A29%3A34Z&sp=r"
   },
   "OldLogoFileName": "x1q50sm1.jpg",
   "OrderComponentMetadata": {
@@ -223,6 +224,7 @@
     "form": 8,
     "gallery": 5,
     "icon": 1,
+    "image": 11,
     "label": 0,
     "radio": 9,
     "rectangle": 4,
@@ -299,11 +301,11 @@
     "Gender_DataCard1": {},
     "Gender_DataCard3": {},
     "Home Design": {},
-    "Home Design_1": {},
     "homeicon": {},
     "homeicon_1": {},
     "homeicon_2": {},
     "homeicon_3": {},
+    "Image1": {},
     "infoLbl": {},
     "infoLbl_1": {},
     "infoLbl_2": {},
@@ -463,11 +465,11 @@
     "Gender_DataCard1": 30,
     "Gender_DataCard3": 128,
     "Home Design": 0,
-    "Home Design_1": 3,
     "homeicon": 8,
     "homeicon_1": 43,
     "homeicon_2": 78,
     "homeicon_3": 105,
+    "Image1": 2,
     "infoLbl": 7,
     "infoLbl_1": 42,
     "infoLbl_2": 77,
@@ -482,7 +484,7 @@
     "logo_1": 0,
     "MainScreen": 0,
     "name": 85,
-    "newVisitor": 2,
+    "newVisitor": 3,
     "NewVisitorScreen": 0,
     "nextBtn": 95,
     "persontomeet": 89,
@@ -557,6 +559,7 @@
   },
   "ResourcesJsonIndices": {
     "Image-Background Image": 1,
+    "Image-ez-visit": 2,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
