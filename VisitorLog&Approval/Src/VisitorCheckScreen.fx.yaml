@@ -26,8 +26,8 @@ VisitorCheckScreen As screen:
         FocusedBorderThickness: =0
         Icon: =Icon.Home
         OnSelect: =Navigate(MainScreen)
-        X: =1259
-        Y: =44
+        X: =1249
+        Y: =94
         ZIndex: =5
 
     visitorCheckForm As form:
@@ -697,12 +697,6 @@ VisitorCheckScreen As screen:
                 Y: =10
                 ZIndex: =6
 
-    logo_5 As logo:
-        Width: =453
-        X: =8
-        Y: =38
-        ZIndex: =8
-
     btnSubmit_3 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(22, 38, 50, 1)
@@ -734,4 +728,9 @@ VisitorCheckScreen As screen:
         X: =579
         Y: =696
         ZIndex: =9
+
+    companyName_5 As companyName:
+        X: =212
+        Y: =18
+        ZIndex: =10
 

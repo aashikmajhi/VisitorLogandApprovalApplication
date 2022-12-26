@@ -548,12 +548,6 @@ VisitorInfoScreen As screen:
                 Y: =54
                 ZIndex: =7
 
-    logo_3 As logo:
-        Width: =453
-        X: =12
-        Y: =44
-        ZIndex: =2
-
     visitorSearchByPhone As text:
         BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =2
@@ -625,8 +619,8 @@ VisitorInfoScreen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Home
         OnSelect: =Navigate(MainScreen)
-        X: =1259
-        Y: =44
+        X: =1249
+        Y: =164
         ZIndex: =5
 
     infoLbl_1 As label:
@@ -640,7 +634,7 @@ VisitorInfoScreen As screen:
         Text: ="Visit Information"
         Width: =377
         X: =494
-        Y: =81
+        Y: =91
         ZIndex: =6
 
     btnSubmit_1 As button:
@@ -708,4 +702,9 @@ VisitorInfoScreen As screen:
         X: =64
         Y: =406
         ZIndex: =9
+
+    companyName_3 As companyName:
+        X: =210
+        Y: =10
+        ZIndex: =10
 

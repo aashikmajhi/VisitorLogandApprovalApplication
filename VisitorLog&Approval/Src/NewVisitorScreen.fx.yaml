@@ -62,8 +62,8 @@ NewVisitorScreen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Home
         OnSelect: =Navigate(MainScreen)
-        X: =1246
-        Y: =44
+        X: =1236
+        Y: =104
         ZIndex: =5
 
     visitorsDetail As form:
@@ -615,9 +615,8 @@ NewVisitorScreen As screen:
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
-    logo_2 As logo:
-        Height: =89
-        Width: =367
-        Y: =31
+    companyName_4 As companyName:
+        X: =213
+        Y: =10
         ZIndex: =7
 

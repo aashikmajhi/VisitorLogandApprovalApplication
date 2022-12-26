@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 186,
+                  "charOffset": 178,
                   "snippet": {
                     "text": "1"
                   }
@@ -226,19 +226,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.DatePicker1"
+                "type": "SearchVisitorDetailsScreen.fromDate"
               }
             }
           ],
@@ -1126,19 +1126,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.DatePicker2.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.DatePicker2.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.DatePicker2"
+                "type": "SearchVisitorDetailsScreen.toDate"
               }
             }
           ],

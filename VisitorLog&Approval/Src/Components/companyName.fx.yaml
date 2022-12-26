@@ -1,13 +1,12 @@
-logo As CanvasComponent:
+companyName As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =98
-    Width: =370
+    Width: =940
     X: =0
     Y: =0
     ZIndex: =1
 
-    companyLogo As label:
-        Align: =Align.Center
+    companyName_1 As label:
         BorderColor: =RGBA(0, 18, 107, 1)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(39, 113, 194, 1)
@@ -16,7 +15,7 @@ logo As CanvasComponent:
         FontWeight: =FontWeight.Bold
         Height: =98
         Size: =45
-        Text: ="Astral"
-        Width: =370
+        Text: ="Astral Computers Nepal Pvt. Ltd."
+        Width: =940
         ZIndex: =2
 

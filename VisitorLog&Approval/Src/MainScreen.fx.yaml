@@ -100,3 +100,10 @@ MainScreen As screen:
         Y: =75
         ZIndex: =7
 
+    "'Home Design_1' As 'Home Design'":
+        Height: =293
+        Width: =632
+        X: =674
+        Y: =277
+        ZIndex: =8
+
