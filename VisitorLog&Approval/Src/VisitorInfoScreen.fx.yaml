@@ -688,13 +688,13 @@ VisitorInfoScreen As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         InputTextPlaceholder: ="Employee To Visit"
         Items: |-
-            =Office365Users.SearchUser({searchTerm:employeeList.SearchText})
+            =Filter(Office365Users.SearchUser({searchTerm:employeeList.SearchText}),Not(IsBlank(Department)))
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         Reset: =true
         SearchFields: =["DisplayName"]
         SearchItems: |-
-            =Search(Office365Users.SearchUser({searchTerm:employeeList.SearchText}),employeeList.SearchText,"DisplayName")
+            =Search(Filter(Office365Users.SearchUser({searchTerm:employeeList.SearchText}),Not(IsBlank(Department))),employeeList.SearchText,"DisplayName")
         SelectionFill: =RGBA(100, 118, 132, 1)
         SelectMultiple: =false
         Size: =13

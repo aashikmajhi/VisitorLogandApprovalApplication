@@ -37,7 +37,7 @@ SearchVisitorDetailsScreen As screen:
         Size: =20
         Text: ="Search Employee"
         Width: =249
-        X: =71
+        X: =21
         Y: =186
         ZIndex: =3
 
@@ -58,19 +58,19 @@ SearchVisitorDetailsScreen As screen:
         HoverFill: =RGBA(205, 209, 213, 1)
         InputTextPlaceholder: ="Search Employee"
         Items: |-
-            =Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText})
+            =Filter(Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText}),Not(IsBlank(Department)))
         NoSelectionText: =
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         Reset: =true
         SearchFields: =["DisplayName"]
         SearchItems: |-
-            =Search(Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText}),searchVisitedEmployee.SearchText,"DisplayName")
+            =Search(Filter(Office365Users.SearchUser({searchTerm:searchVisitedEmployee.SearchText}),Not(IsBlank(Department))),searchVisitedEmployee.SearchText,"DisplayName")
         SelectionFill: =RGBA(100, 118, 132, 1)
         SelectMultiple: =false
         Size: =13
         Width: =348
-        X: =333
+        X: =283
         Y: =186
         ZIndex: =4
 
@@ -181,12 +181,12 @@ SearchVisitorDetailsScreen As screen:
 
     Gallery1 As gallery.galleryVertical:
         BorderThickness: =3
-        Height: =455
-        Items: =SortByColumns(Filter('Visitor Request', StartsWith('Employee Name', searchVisitedEmployee.Selected.DisplayName) || Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending)
+        Height: =475
+        Items: =If(searchVisitedEmployee.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Employee Name'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =80
-        Width: =1332
+        Width: =1344
         X: =12
         Y: =277
         ZIndex: =14
@@ -346,16 +346,18 @@ SearchVisitorDetailsScreen As screen:
             ZIndex: =9
 
     fromDate As datepicker:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(210, 215, 218, 1)
         CalendarHeaderFill: =RGBA(100, 118, 132, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
         HoverDateFill: =RGBA(205, 209, 213, 1)
         IconBackground: =RGBA(100, 118, 132, 1)
         OnChange: =true
         OnSelect: =true
+        Reset: =true
         SelectedDateFill: =RGBA(100, 118, 132, 1)
         Tooltip: =
         Width: =150
@@ -378,16 +380,18 @@ SearchVisitorDetailsScreen As screen:
         ZIndex: =16
 
     toDate As datepicker:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(210, 215, 218, 1)
         CalendarHeaderFill: =RGBA(100, 118, 132, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
         HoverDateFill: =RGBA(205, 209, 213, 1)
         IconBackground: =RGBA(100, 118, 132, 1)
         OnChange: =true
         OnSelect: =true
+        Reset: =true
         SelectedDateFill: =RGBA(100, 118, 132, 1)
         Tooltip: =
         Width: =150
@@ -413,4 +417,21 @@ SearchVisitorDetailsScreen As screen:
         X: =208
         Y: =10
         ZIndex: =19
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(29, 49, 64, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Reset(toDate) And Reset(fromDate) And Reset(searchVisitedEmployee)
+        Size: =12
+        Text: ="Reset"
+        Width: =65
+        X: =799
+        Y: =192
+        ZIndex: =20
 
