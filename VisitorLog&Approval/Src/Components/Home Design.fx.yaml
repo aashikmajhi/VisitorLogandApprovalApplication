@@ -7,10 +7,8 @@
     ZIndex: =1
 
     companyLogo_1 As label:
-        BorderColor: =RGBA(0, 18, 107, 1)
         BorderStyle: =BorderStyle.None
         Color: =RGBA(39, 113, 194, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold

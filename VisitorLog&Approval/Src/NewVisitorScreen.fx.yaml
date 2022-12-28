@@ -2,12 +2,8 @@ NewVisitorScreen As screen:
     BackgroundImage: ='Background Image'
     Fill: =RGBA(0, 0, 0, 0)
     ImagePosition: =ImagePosition.Fill
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     infoLbl As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
         Height: =80
@@ -21,16 +17,10 @@ NewVisitorScreen As screen:
     btnSubmit As button:
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(210, 215, 218, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'
-        FontWeight: =FontWeight.Semibold
         Height: =58
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =If(
                 IsEmpty(Errors(VisitorInformation)),
@@ -56,10 +46,7 @@ NewVisitorScreen As screen:
         ZIndex: =4
 
     homeicon As icon.Home:
-        BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(9, 33, 98, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Home
         OnSelect: =Navigate(MainScreen)
         X: =1236
@@ -68,7 +55,6 @@ NewVisitorScreen As screen:
 
     visitorsDetail As form:
         AcceptsFocus: =false
-        BorderColor: =RGBA(32, 54, 71, 1)
         BorderThickness: =3
         DataSource: =VisitorInformation
         DefaultMode: =FormMode.New
@@ -80,7 +66,6 @@ NewVisitorScreen As screen:
         ZIndex: =6
 
         Salutation_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Salutation"
             Default: =ThisItem.Salutation
@@ -97,12 +82,9 @@ NewVisitorScreen As screen:
 
             DataCardKey5 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =33
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =118
                 Wrap: =false
@@ -112,9 +94,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage5 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -130,10 +109,7 @@ NewVisitorScreen As screen:
 
             StarVisible5 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey5.Height
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -142,17 +118,12 @@ NewVisitorScreen As screen:
                 ZIndex: =4
 
             salutation As radio:
-                BorderColor: =RGBA(32, 54, 71, 1)
                 BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =64
-                HoverColor: =RGBA(32, 54, 71, 1)
                 Items: =Choices([@VisitorInformation].Salutation)
                 Layout: =Layout.Horizontal
-                RadioBorderColor: =RGBA(32, 54, 71, 1)
-                Size: =13
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
                 Width: =442
                 X: =169
@@ -160,7 +131,6 @@ NewVisitorScreen As screen:
                 ZIndex: =5
 
         "'Full Name_DataCard1' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.'Full Name'
@@ -179,10 +149,7 @@ NewVisitorScreen As screen:
 
             StarVisible1 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =9
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -192,9 +159,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage1 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -210,25 +174,15 @@ NewVisitorScreen As screen:
 
             visitorFullName As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(32, 54, 71, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
                 Tooltip: =If(!IsBlank(visitorFullName.Text), "", "Name can not be blank")
                 Width: =Parent.Width - 60
                 X: =30
@@ -237,13 +191,10 @@ NewVisitorScreen As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =DisplayMode.View
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -252,7 +203,6 @@ NewVisitorScreen As screen:
                 ZIndex: =4
 
         Company_DataCard1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="CompanyInfo"
             Default: =ThisItem.Company
@@ -270,12 +220,9 @@ NewVisitorScreen As screen:
 
             DataCardKey3 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -285,25 +232,15 @@ NewVisitorScreen As screen:
 
             visitorCompany As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(32, 54, 71, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
                 Tooltip: =If(!IsBlank(visitorCompany.Text), "", "Company can not be blank")
                 Width: =Parent.Width - 60
                 X: =30
@@ -312,9 +249,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage3 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -330,10 +264,7 @@ NewVisitorScreen As screen:
 
             StarVisible3 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey3.Height
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -342,7 +273,6 @@ NewVisitorScreen As screen:
                 ZIndex: =4
 
         "'Email Address_DataCard1' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmailAddress"
             Default: =ThisItem.'Email Address'
@@ -360,12 +290,9 @@ NewVisitorScreen As screen:
 
             DataCardKey2 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -375,26 +302,16 @@ NewVisitorScreen As screen:
 
             visitorEmail As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
                 HintText: ="example@smt.com"
-                HoverBorderColor: =RGBA(32, 54, 71, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
                 Tooltip: |-
                     =If(
                         !IsBlank(visitorEmail.Text),
@@ -413,9 +330,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage2 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -431,10 +345,7 @@ NewVisitorScreen As screen:
 
             StarVisible2 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey2.Height
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -443,7 +354,6 @@ NewVisitorScreen As screen:
                 ZIndex: =4
 
         Gender_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Gender"
             Default: =ThisItem.Gender
@@ -460,12 +370,9 @@ NewVisitorScreen As screen:
 
             DataCardKey4 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -475,9 +382,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage4 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -493,10 +397,7 @@ NewVisitorScreen As screen:
 
             StarVisible4 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey4.Height
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -505,17 +406,12 @@ NewVisitorScreen As screen:
                 ZIndex: =4
 
             visitorGender As radio:
-                BorderColor: =RGBA(32, 54, 71, 1)
                 BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =61
-                HoverColor: =RGBA(32, 54, 71, 1)
                 Items: =Choices([@VisitorInformation].Gender)
                 Layout: =Layout.Horizontal
-                RadioBorderColor: =RGBA(32, 54, 71, 1)
-                Size: =13
                 Tooltip: =If(!IsBlank(visitorGender.Selected), false, "Please choose your gender.")
                 Width: =388
                 X: =146
@@ -523,7 +419,6 @@ NewVisitorScreen As screen:
                 ZIndex: =5
 
         "'Phone Number_DataCard1' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Phone_x0020_Number"
             Default: =ThisItem.'Phone Number'
@@ -541,12 +436,9 @@ NewVisitorScreen As screen:
 
             DataCardKey6 As label:
                 AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -556,28 +448,18 @@ NewVisitorScreen As screen:
 
             visitorPhoneNumber As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
                 Clear: =true
-                Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
                 Format: =TextFormat.Number
                 HintText: ="9XXX"
-                HoverBorderColor: =RGBA(32, 54, 71, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
                 VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
                 Width: =Parent.Width - 60
                 X: =30
@@ -586,9 +468,6 @@ NewVisitorScreen As screen:
 
             ErrorMessage6 As label:
                 AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -604,10 +483,7 @@ NewVisitorScreen As screen:
 
             StarVisible6 As label:
                 Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey6.Height
-                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
