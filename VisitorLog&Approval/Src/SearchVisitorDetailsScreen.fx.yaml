@@ -333,6 +333,14 @@ SearchVisitorDetailsScreen As screen:
         Fill: =RGBA(29, 49, 64, 1)
         Height: =30
         OnSelect: =Reset(toDate) And Reset(fromDate) And Reset(searchVisitedEmployee)
+        PaddingBottom: =2
+        PaddingLeft: =2
+        PaddingRight: =2
+        PaddingTop: =2
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
         Size: =12
         Text: ="Reset"
         Width: =65
