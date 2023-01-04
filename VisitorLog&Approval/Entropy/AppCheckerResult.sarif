@@ -14,47 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 22,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "VisitorCheckScreen",
-                "type": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Boolean",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-WarnBooleanExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items"
                 }
               ],
@@ -88,7 +47,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -128,7 +87,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -168,7 +127,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -209,6 +168,47 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 22,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "VisitorCheckScreen",
+                "type": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Boolean",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-WarnBooleanExpected",
           "ruleIndex": 2
         },
         {
@@ -216,19 +216,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.homeicon"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.homeicon_2"
               }
             }
           ],
@@ -246,19 +246,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.homeicon"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.homeicon_2"
               }
             }
           ],
@@ -276,19 +276,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.searchVisitedEmployee.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.searchVisitedEmployee.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.searchVisitedEmployee"
               }
             }
           ],
@@ -306,19 +306,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.fromDate"
               }
             }
           ],
@@ -336,19 +336,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.toDate"
               }
             }
           ],
@@ -366,19 +366,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail"
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1"
               }
             }
           ],
@@ -396,19 +396,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender"
+                "member": "TabIndex",
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1"
               }
             }
           ],
@@ -418,38 +418,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1026,19 +996,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.homeicon_2"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.homeicon"
               }
             }
           ],
@@ -1056,19 +1026,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.TabIndex"
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.homeicon_2.TabIndex",
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.homeicon_2"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.homeicon"
               }
             }
           ],
@@ -1086,19 +1056,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.searchVisitedEmployee.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.searchVisitedEmployee.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.searchVisitedEmployee"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation"
               }
             }
           ],
@@ -1116,19 +1086,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.fromDate.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.fromDate"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName"
               }
             }
           ],
@@ -1146,19 +1116,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.toDate.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.toDate"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany"
               }
             }
           ],
@@ -1176,19 +1146,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.Gallery1"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail"
               }
             }
           ],
@@ -1206,19 +1176,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.TabIndex"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.TabIndex",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.Gallery1"
+                "member": "AccessibleLabel",
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender"
               }
             }
           ],
@@ -1228,8 +1198,38 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1297,20 +1297,6 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-WarnBooleanExpected",
-              "messageStrings": {
-                "issue": {
-                  "text": "Warning: Expecting a true or false value. The current value may cause unexpected behavior."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
@@ -1342,6 +1328,20 @@
                   "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
                   "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-WarnBooleanExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Warning: Expecting a true or false value. The current value may cause unexpected behavior."
+                }
+              },
+              "properties": {
+                "componentType": "app",
                 "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
