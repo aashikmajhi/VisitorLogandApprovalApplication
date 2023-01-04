@@ -22,7 +22,11 @@ NewVisitorScreen As screen:
         Font: =Font.'Lato Black'
         Height: =58
         OnSelect: |-
-            =If(
+            =Patch(
+                VisitorInformation,
+                visitorsDetail.Updates
+            );
+            If(
                 IsEmpty(Errors(VisitorInformation)),
                 Notify(
                     "Success",
@@ -34,12 +38,8 @@ NewVisitorScreen As screen:
                     NotificationType.Error
                 )
             );
-            Patch(
-                VisitorInformation,
-                visitorsDetail.Updates
-            );
             
-            ResetForm(regularVisitorsDetail)
+            ResetForm(regularVisitorsDetail);
         Size: =20
         Text: ="Submit"
         Width: =207
