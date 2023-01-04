@@ -75,7 +75,8 @@ NewVisitorScreen As screen:
             Height: =46
             Required: =false
             Update: =salutation.Selected
-            Width: =Parent.Width
+            Width: |
+                =624
             X: =0
             Y: =0
             ZIndex: =6
@@ -125,6 +126,7 @@ NewVisitorScreen As screen:
                 Items: =Choices([@VisitorInformation].Salutation)
                 Layout: =Layout.Horizontal
                 OnSelect: =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female")
+                RadioSize: =30
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
                 Width: =442
                 X: =169
