@@ -443,7 +443,7 @@ VisitorInfoScreen As screen:
 
     visitorSearchByPhone As text:
         Clear: =true
-        Default: =If(!IsBlank(varMatch), varMatch )
+        Default: =If(!IsBlank(varMatch), varMatch,varMatch=visitorPhoneNumber.Text )
         Format: =TextFormat.Number
         HintText: ="Search Visitor By Phone Number"
         MaxLength: =10
