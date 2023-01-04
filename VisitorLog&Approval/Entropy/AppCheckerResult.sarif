@@ -103,10 +103,51 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 300,
+                  "charLength": 2,
+                  "charOffset": 242,
                   "snippet": {
-                    "text": "1"
+                    "text": "<>"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Boolean"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 360,
+                  "snippet": {
+                    "text": "IsToday(Created)"
                   }
                 }
               },
@@ -134,41 +175,80 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.OnSelect"
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.OnSelect",
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 76,
+                  "charLength": 2,
+                  "charOffset": 357,
                   "snippet": {
-                    "text": "="
+                    "text": "||"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "Items",
                 "module": "SearchVisitorDetailsScreen",
-                "type": "SearchVisitorDetailsScreen.Gallery1.nextBtn"
+                "type": "SearchVisitorDetailsScreen.Gallery1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Text",
-              "Boolean"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 1
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 504,
+                  "snippet": {
+                    "text": "1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1236,6 +1316,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1.nextBtn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchVisitorDetailsScreen.Gallery1.nextBtn.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SearchVisitorDetailsScreen",
+                "type": "SearchVisitorDetailsScreen.Gallery1.nextBtn"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
@@ -1278,6 +1418,36 @@
                 "member": "Default",
                 "module": "VisitorCheckScreen",
                 "type": "VisitorCheckScreen.visitorCheckForm.Symptoms_DataCard2.symptomsRadio"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VisitorCheckScreen.btnSubmit_3.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "VisitorCheckScreen.btnSubmit_3.Visible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "VisitorCheckScreen",
+                "type": "VisitorCheckScreen.btnSubmit_3"
               }
             }
           ],

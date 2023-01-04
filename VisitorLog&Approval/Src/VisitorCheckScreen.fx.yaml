@@ -417,7 +417,7 @@ VisitorCheckScreen As screen:
                 ChevronBackground: =RGBA(39, 67, 125, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(ThisItem.'Visit Status'.Value = "Visit Completed", DisplayMode.Disabled,Parent.DisplayMode)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 IsSearchable: =false
@@ -568,6 +568,7 @@ VisitorCheckScreen As screen:
             )
         Size: =20
         Text: ="Submit"
+        Visible: =If(visitStatus.Text = "Visit Completed", false, true)
         Width: =206
         X: =579
         Y: =696

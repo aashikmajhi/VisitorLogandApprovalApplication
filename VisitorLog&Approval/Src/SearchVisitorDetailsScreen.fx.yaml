@@ -136,7 +136,7 @@ SearchVisitorDetailsScreen As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =3
         Height: =475
-        Items: =If(searchVisitedEmployee.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Employee Name'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending))
+        Items: =If(searchVisitedEmployee.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Employee Name'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending),If(searchVisitedEmployee.Selected.DisplayName<>IsBlank(""),SortByColumns(Filter('Visitor Request', 'Employee Name' = searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created", Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending)))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =80
@@ -268,7 +268,7 @@ SearchVisitorDetailsScreen As screen:
             Fill: =Switch(ThisItem.'Visit Status'.Value,"Visit Completed",Green,"Pending Security Check",Red,"Security Check Completed",Blue)
             OnSelect: |-
                 =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
-                If(visitStatus.Text =! "Visit Completed",Navigate(VisitorCheckScreen),Navigate(VisitorCheckScreen));
+                If(visitStatus.Text = "Visit Completed",Navigate(VisitorCheckScreen), Navigate(VisitorCheckScreen))
             X: =1260
             Y: =5
             ZIndex: =9
