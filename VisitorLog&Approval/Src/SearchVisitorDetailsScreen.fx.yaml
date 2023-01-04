@@ -259,7 +259,6 @@ SearchVisitorDetailsScreen As screen:
             Height: =42
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Visit Status'.Value
-            Width: =142
             Wrap: =false
             X: =1099
             Y: =14
