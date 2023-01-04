@@ -124,7 +124,7 @@
         "Name": "companyLogo",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 147,
+        "PublishOrderIndex": 154,
         "Rules": [
           {
             "Category": "Data",
@@ -400,7 +400,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638083999904989653",
+    "LastModifiedTimestamp": "638084385910339832",
     "Name": "logo",
     "Rules": [
       {
@@ -459,7 +459,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638083999904989653",
+  "LastModifiedTimestamp": "638084385910339832",
   "Name": "9c3bab715be14b0e8f6e1546d785303a",
   "OverridableProperties": {},
   "Version": "638047824090253934"

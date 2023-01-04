@@ -136,7 +136,7 @@ SearchVisitorDetailsScreen As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =3
         Height: =475
-        Items: =If(searchVisitedEmployee.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Employee Name'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending),If(searchVisitedEmployee.Selected.DisplayName<>IsBlank(""),SortByColumns(Filter('Visitor Request', 'Employee Name' = searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created", Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending)))
+        Items: =If(searchVisitedEmployee.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Person To Visit'=searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created",Descending),If(searchVisitedEmployee.Selected.DisplayName<>IsBlank(""),SortByColumns(Filter('Visitor Request', 'Person To Visit' = searchVisitedEmployee.Selected.DisplayName || IsToday(Created)),"Created", Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate.SelectedDate && Created<=toDate.SelectedDate,1,Days), "Created", Ascending)))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =80
@@ -226,7 +226,7 @@ SearchVisitorDetailsScreen As screen:
             FontWeight: =FontWeight.Semibold
             Height: =42
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Employee Name'
+            Text: =ThisItem.'Person To Visit'
             Width: =208
             Wrap: =false
             X: =662

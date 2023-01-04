@@ -18,7 +18,7 @@ VisitorInfoScreen As screen:
         "'Employee Name_DataCard5' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Employee_x0020_Name"
-            Default: =ThisItem.'Employee Name'
+            Default: =ThisItem.'Person To Visit'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Visitor Request'],DataSourceInfo.DisplayName,"Employee_x0020_Name")
             Fill: =RGBA(0, 0, 0, 0)

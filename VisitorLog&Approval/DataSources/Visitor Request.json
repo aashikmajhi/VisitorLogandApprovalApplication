@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-11-07T21:40:49.8190000Z",
+      "LastChangedTimeString": "2022-12-08T17:53:04.6710000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -29,7 +29,7 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
-      "Employee_x0020_Name": "Employee Name",
+      "Employee_x0020_Name": "Person To Visit",
       "Gender": "Gender",
       "Gender#Id": "Gender Id",
       "ID": "ID",

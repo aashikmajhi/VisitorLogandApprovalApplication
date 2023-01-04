@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-11-07T21:40:49.8190000Z",
+      "LastChangedTimeString": "2022-12-08T17:53:04.6710000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -38,7 +38,8 @@
       "Phone_x0020_Number": "Phone Number",
       "Salutation": "Salutation",
       "Salutation#Id": "Salutation Id",
-      "Title": "Full Name"
+      "Title": "Full Name",
+      "VisitorPhoto": "VisitorPhoto"
     },
     "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
     "EncodeDataset": true,
