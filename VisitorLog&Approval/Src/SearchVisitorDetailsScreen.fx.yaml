@@ -100,7 +100,7 @@ SearchVisitorDetailsScreen As screen:
         Size: =15
         Text: ="Person To Meet"
         Width: =195
-        X: =701
+        X: =691
         Y: =237
         ZIndex: =9
 
@@ -110,7 +110,7 @@ SearchVisitorDetailsScreen As screen:
         FontWeight: =FontWeight.Semibold
         Size: =15
         Text: ="Created"
-        X: =916
+        X: =886
         Y: =237
         ZIndex: =10
 
@@ -229,7 +229,7 @@ SearchVisitorDetailsScreen As screen:
             Text: =ThisItem.'Employee Name'
             Width: =208
             Wrap: =false
-            X: =672
+            X: =662
             Y: =14
             ZIndex: =6
 
@@ -245,7 +245,7 @@ SearchVisitorDetailsScreen As screen:
             Text: =ThisItem.Created
             Width: =208
             Wrap: =false
-            X: =881
+            X: =851
             Y: =14
             ZIndex: =7
 
@@ -259,9 +259,10 @@ SearchVisitorDetailsScreen As screen:
             Height: =42
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Visit Status'.Value
+            Width: =220
             Wrap: =false
-            X: =1099
-            Y: =14
+            X: =1055
+            Y: =9
             ZIndex: =8
 
         nextBtn As arrow:
@@ -269,8 +270,8 @@ SearchVisitorDetailsScreen As screen:
             OnSelect: |-
                 =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
                 If(visitStatus.Text = "Visit Completed",Navigate(VisitorCheckScreen), Navigate(VisitorCheckScreen))
-            X: =1260
-            Y: =5
+            X: =1284
+            Y: =1
             ZIndex: =9
 
     fromDate As datepicker:
