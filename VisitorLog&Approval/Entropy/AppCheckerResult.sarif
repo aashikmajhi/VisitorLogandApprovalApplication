@@ -1406,19 +1406,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera2.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera2.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera2"
+                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1"
               }
             }
           ],
@@ -1508,36 +1508,6 @@
                 "member": "Visible",
                 "module": "VisitorCheckScreen",
                 "type": "VisitorCheckScreen.btnSubmit_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.visitorSearchByPhone"
               }
             }
           ],

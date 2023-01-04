@@ -73,11 +73,11 @@ NewVisitorScreen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"VisitorPhoto")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =235
+            Height: =143
             Required: =false
             Update: =Image2.Image
-            Width: =624
-            X: =1
+            Width: =620
+            X: =2
             Y: =0
             ZIndex: =1
 
@@ -95,7 +95,7 @@ NewVisitorScreen As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture1.Height
-                Image: =If(IsBlank(AddPicture1.Media), Parent.Default, AddPicture1.Media)
+                Image: =Camera1.Photo
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture1.Width
                 X: =AddPicture1.X
@@ -104,6 +104,8 @@ NewVisitorScreen As screen:
 
             AddPicture1 As addMedia:
                 Height: =187
+                OnSelect: =Camera1.Visible
+                UseMobileCamera: =true
                 Width: =280
                 X: =286
                 Y: =6
@@ -134,12 +136,14 @@ NewVisitorScreen As screen:
                 Y: =DataCardKey12.Y
                 ZIndex: =5
 
-            Camera2 As camera:
+            Camera1 As camera:
                 Camera: =0
-                Height: =149
+                Height: =123
                 OnSelect: =true
-                Width: =266
-                Y: =54
+                OnStream: =true
+                Width: =177
+                X: =30
+                Y: =62
                 ZIndex: =6
 
         Salutation_DataCard1 As typedDataCard.comboBoxEditCard:
@@ -149,11 +153,11 @@ NewVisitorScreen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Salutation")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =60
+            Height: =203
             Required: =false
             Update: =salutation.Selected
-            Width: =624
-            X: =0
+            Width: =Parent.Width/2
+            X: =1
             Y: =0
             ZIndex: =6
 
@@ -166,7 +170,7 @@ NewVisitorScreen As screen:
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =20
-                Y: =20
+                Y: =10
                 ZIndex: =1
 
             ErrorMessage5 As label:
@@ -181,7 +185,7 @@ NewVisitorScreen As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =salutation.Y + salutation.Height
+                Y: =44
                 ZIndex: =3
 
             StarVisible5 As label:
@@ -208,9 +212,8 @@ NewVisitorScreen As screen:
                 OnSelect: =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female")
                 RadioSize: =30
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
-                Width: =442
-                X: =169
-                Y: =10
+                Width: =392
+                X: =128
                 ZIndex: =5
 
         "'Full Name_DataCard1' As typedDataCard.textualEditCard":
@@ -224,7 +227,7 @@ NewVisitorScreen As screen:
             MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =visitorFullName.Text
-            Width: =626
+            Width: =Parent.Width/2
             WidthFit: =false
             X: =0
             Y: =1
@@ -296,7 +299,7 @@ NewVisitorScreen As screen:
             MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "CompanyInfo")
             Required: =true
             Update: =visitorCompany.Text
-            Width: =624
+            Width: =Parent.Width/2
             X: =1
             Y: =1
             ZIndex: =6
@@ -366,7 +369,7 @@ NewVisitorScreen As screen:
             MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "EmailAddress")
             Required: =true
             Update: =visitorEmail.Text
-            Width: =624
+            Width: =Parent.Width/2
             X: =0
             Y: =2
             ZIndex: =6
@@ -447,7 +450,7 @@ NewVisitorScreen As screen:
             MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "Phone_x0020_Number")
             Required: =true
             Update: =visitorPhoneNumber.Text
-            Width: =624
+            Width: =Parent.Width/2
             X: =0
             Y: =3
             ZIndex: =6

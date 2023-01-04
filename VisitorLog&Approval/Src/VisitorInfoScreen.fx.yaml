@@ -443,11 +443,7 @@ VisitorInfoScreen As screen:
 
     visitorSearchByPhone As text:
         Clear: =true
-        Default: |
-            =If(
-               !IsBlank(varMatch),
-               varMatch
-            ) || visitorPhoneNumber.Text
+        Default: =If(!IsBlank(varMatch), varMatch )
         Format: =TextFormat.Number
         HintText: ="Search Visitor By Phone Number"
         MaxLength: =10
@@ -533,7 +529,8 @@ VisitorInfoScreen As screen:
                     First(Errors('Visitor Request')).Message,
                     NotificationType.Error
                 )
-            )
+            );
+            ResetForm(regularVisitorsDetail);
         Size: =20
         Text: ="Submit"
         Width: =206
