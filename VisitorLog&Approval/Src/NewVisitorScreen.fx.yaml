@@ -11,7 +11,7 @@ NewVisitorScreen As screen:
         Text: ="New Visitor Information"
         Width: =536
         X: =416
-        Y: =79
+        Y: =99
         ZIndex: =3
 
     btnSubmit As button:
@@ -50,7 +50,7 @@ NewVisitorScreen As screen:
         Icon: =Icon.Home
         OnSelect: =Navigate(MainScreen)
         X: =1236
-        Y: =56
+        Y: =96
         ZIndex: =5
 
     visitorsDetail As form:
@@ -58,11 +58,11 @@ NewVisitorScreen As screen:
         BorderThickness: =3
         DataSource: =VisitorInformation
         DefaultMode: =FormMode.New
-        Height: =495
+        Height: =477
         NumberOfColumns: =2
         Width: =1252
-        X: =48
-        Y: =157
+        X: =46
+        Y: =177
         ZIndex: =6
 
         Salutation_DataCard1 As typedDataCard.comboBoxEditCard:
@@ -272,79 +272,6 @@ NewVisitorScreen As screen:
                 Y: =24
                 ZIndex: =5
 
-        "'Phone Number_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Phone_x0020_Number"
-            Default: =ThisItem.'Phone Number'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Phone_x0020_Number")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "Phone_x0020_Number")
-            Required: =true
-            Update: =visitorPhoneNumber.Text
-            Width: =624
-            X: =0
-            Y: =275.5
-            ZIndex: =6
-
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Font: =Font.'Lato Black'
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            visitorPhoneNumber As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Clear: =true
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Format: =TextFormat.Number
-                HintText: ="9XXX"
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =56
-                ZIndex: =2
-
-            ErrorMessage6 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =visitorPhoneNumber.Y + visitorPhoneNumber.Height
-                ZIndex: =3
-
-            StarVisible6 As label:
-                Align: =Align.Center
-                Height: =DataCardKey6.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey6.Y
-                ZIndex: =4
-
         Company_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="CompanyInfo"
@@ -496,7 +423,81 @@ NewVisitorScreen As screen:
                 Y: =DataCardKey2.Y
                 ZIndex: =4
 
+        "'Phone Number_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Phone_x0020_Number"
+            Default: =ThisItem.'Phone Number'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Phone_x0020_Number")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@VisitorInformation], DataSourceInfo.MaxLength, "Phone_x0020_Number")
+            Required: =true
+            Update: =visitorPhoneNumber.Text
+            Width: =624
+            X: =0
+            Y: =275.5
+            ZIndex: =6
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            visitorPhoneNumber As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                HintText: ="9XXX"
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =56
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =visitorPhoneNumber.Y + visitorPhoneNumber.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
     companyName_4 As companyName:
         X: =213
+        Y: =20
         ZIndex: =7
 
