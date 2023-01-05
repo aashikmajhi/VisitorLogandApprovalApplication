@@ -534,7 +534,7 @@ VisitorCheckScreen As screen:
                 ZIndex: =5
 
             symptomsRadio As radio:
-                Default: =symptoms.Selected.Value=_lastSelectedSymptoms
+                Default: =_lastSelectedSymptoms
                 DisabledColor: =RGBA(22, 38, 50, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Font: =Font.Lato
