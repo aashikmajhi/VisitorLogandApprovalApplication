@@ -39,7 +39,7 @@ NewVisitorScreen As screen:
                 visitorsDetail.Updates
                 );
             
-            ResetForm(regularVisitorsDetail);
+            ResetForm(visitorsDetail)
         Size: =20
         Text: ="Submit"
         Width: =207
@@ -71,7 +71,7 @@ NewVisitorScreen As screen:
         VisitorPhoto_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="VisitorPhoto"
-            Default: =ThisItem.VisitorPhoto
+            Default: =ThisItem.'Visitor Photo'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"VisitorPhoto")
             Fill: =RGBA(0, 0, 0, 0)
@@ -478,6 +478,7 @@ NewVisitorScreen As screen:
                 Format: =TextFormat.Number
                 HintText: ="9XXX"
                 MaxLength: =Parent.MaxLength
+                OnChange: =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
