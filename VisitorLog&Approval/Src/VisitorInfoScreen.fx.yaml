@@ -529,9 +529,10 @@ VisitorInfoScreen As screen:
                 )
             );
             ResetForm(regularVisitorsDetail);
-            Reset('Reason For Visit_DataCard1')
             Reset(employeeName);
             Reset([@employeeList]);
+            Reset(reason);
+            Reset(visitorSearchByPhone);
         Size: =20
         Text: ="Submit"
         Width: =206
