@@ -28,9 +28,9 @@ MainScreen As screen:
         RadiusTopRight: =9
         Size: =22
         Text: ="New Visitor"
-        Width: =300
-        X: =174
-        Y: =277
+        Width: =372
+        X: =139
+        Y: =286
         ZIndex: =4
 
     regularVisitor As button:
@@ -49,9 +49,9 @@ MainScreen As screen:
         RadiusTopRight: =9
         Size: =22
         Text: ="Regular Visitor"
-        Width: =300
-        X: =174
-        Y: =427
+        Width: =372
+        X: =139
+        Y: =436
         ZIndex: =5
 
     admin As button:
@@ -67,11 +67,11 @@ MainScreen As screen:
         RadiusTopLeft: =9
         RadiusTopRight: =9
         Size: =22
-        Text: ="Admin"
+        Text: ="Security Check"
         Visible: =isUserAdminSPList
-        Width: =300
-        X: =174
-        Y: =570
+        Width: =372
+        X: =139
+        Y: =579
         ZIndex: =6
 
     logo_1 As logo:

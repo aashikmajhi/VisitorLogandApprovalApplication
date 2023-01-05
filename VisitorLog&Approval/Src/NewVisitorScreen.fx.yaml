@@ -70,7 +70,7 @@ NewVisitorScreen As screen:
         VisitorPhoto_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="VisitorPhoto"
-            Default: =ThisItem.'Visitor Photo'
+            Default: =ThisItem.VisitorPhoto
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"VisitorPhoto")
             Fill: =RGBA(0, 0, 0, 0)

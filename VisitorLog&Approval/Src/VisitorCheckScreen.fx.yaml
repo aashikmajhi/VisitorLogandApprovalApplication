@@ -120,33 +120,24 @@ VisitorCheckScreen As screen:
             ZIndex: =1
 
             DataCardKey15 As label:
-                AutoHeight: =true
                 FontWeight: =FontWeight.Bold
-                Height: =34
+                Height: =33
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =136
                 Wrap: =false
-                X: =30
                 Y: =10
                 ZIndex: =1
 
             Image5 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
-                Height: =AddPicture3.Height
-                Image: =
-                Tooltip: =Parent.DisplayName
-                Width: =AddPicture3.Width
-                X: =AddPicture3.X
-                Y: =AddPicture3.Y
-                ZIndex: =2
-
-            AddPicture3 As addMedia:
                 Height: =180
-                Text: =""
-                Width: =Parent.Width - 60
-                X: =50
-                ZIndex: =3
+                Image: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,VisitorPhoto)
+                Tooltip: =Parent.DisplayName
+                Width: =438
+                X: =166
+                Y: =10
+                ZIndex: =2
 
             ErrorMessage15 As label:
                 AutoHeight: =true

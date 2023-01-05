@@ -39,7 +39,7 @@
       "Salutation": "Salutation",
       "Salutation#Id": "Salutation Id",
       "Title": "Full Name",
-      "VisitorPhoto": "Visitor Photo"
+      "VisitorPhoto": "VisitorPhoto"
     },
     "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
     "EncodeDataset": true,

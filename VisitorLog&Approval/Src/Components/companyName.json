@@ -124,7 +124,7 @@
         "Name": "companyName_1",
         "Parent": "companyName",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 160,
+        "PublishOrderIndex": 159,
         "Rules": [
           {
             "Category": "Data",
