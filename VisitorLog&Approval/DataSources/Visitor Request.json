@@ -41,7 +41,9 @@
       "Visit_x0020_Status": "Visit Status",
       "Visit_x0020_Status#Id": "Visit Status Id",
       "Visitor_x0020_Company": "Visitor Company",
-      "Visitor_x0020_Name": "Visitor Name"
+      "Visitor_x0020_Name": "Visitor Name",
+      "VisitorID": "VisitorID",
+      "VisitorPhoto": "VisitorPhoto"
     },
     "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
     "EncodeDataset": true,

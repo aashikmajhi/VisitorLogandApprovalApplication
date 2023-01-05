@@ -74,7 +74,7 @@ NewVisitorScreen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"VisitorPhoto")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =143
+            Height: =247
             Required: =false
             Update: =Image2.Image
             Width: =1251
@@ -83,32 +83,37 @@ NewVisitorScreen As screen:
             ZIndex: =1
 
             DataCardKey12 As label:
-                AutoHeight: =true
-                Height: =34
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =33
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
+                Width: =161
                 Wrap: =false
-                X: =226
-                Y: =77
+                X: =599
+                Y: =108
                 ZIndex: =1
 
             Image2 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
-                Height: =AddPicture1.Height
+                Height: =206
                 Image: =Camera1.Photo
                 Tooltip: =Parent.DisplayName
-                Width: =AddPicture1.Width
-                X: =AddPicture1.X
-                Y: =AddPicture1.Y
+                Width: =236
+                X: =769
+                Y: =18
                 ZIndex: =2
 
             AddPicture1 As addMedia:
-                Height: =187
+                FontWeight: =FontWeight.Bold
+                Height: =37
                 OnSelect: =Camera1.Visible
+                Size: =18
+                Text: =""
                 UseMobileCamera: =true
-                Width: =280
-                X: =566
+                Width: =222
+                X: =274
+                Y: =200
                 ZIndex: =3
 
             ErrorMessage7 As label:
@@ -138,12 +143,12 @@ NewVisitorScreen As screen:
 
             Camera1 As camera:
                 Camera: =0
-                Height: =123
+                Height: =145
                 OnSelect: =true
                 OnStream: =true
-                Width: =177
-                X: =376
-                Y: =32
+                Width: =169
+                X: =300
+                Y: =52
                 ZIndex: =6
 
         Gender_DataCard1 As typedDataCard.comboBoxEditCard:
