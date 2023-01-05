@@ -53,6 +53,7 @@ VisitorCheckScreen As screen:
 
             DataCardKey14 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -120,6 +121,7 @@ VisitorCheckScreen As screen:
 
             DataCardKey15 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
