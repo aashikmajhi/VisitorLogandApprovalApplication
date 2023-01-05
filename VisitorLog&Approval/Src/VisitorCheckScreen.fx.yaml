@@ -134,7 +134,7 @@ VisitorCheckScreen As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture3.Height
-                Image: =Camera1.Photo
+                Image: =
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture3.Width
                 X: =AddPicture3.X

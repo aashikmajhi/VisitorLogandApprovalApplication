@@ -108,8 +108,8 @@ NewVisitorScreen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =37
                 OnSelect: =Camera1.Visible
-                Size: =18
-                Text: =""
+                Size: =13
+                Text: ="Click To Take Photo"
                 UseMobileCamera: =true
                 Width: =222
                 X: =274
@@ -150,6 +150,15 @@ NewVisitorScreen As screen:
                 X: =300
                 Y: =52
                 ZIndex: =6
+
+            Label4 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Text: ="Camera Preview"
+                Width: =175
+                X: =297
+                Y: =12
+                ZIndex: =7
 
         Gender_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
