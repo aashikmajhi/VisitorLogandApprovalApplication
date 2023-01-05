@@ -437,6 +437,7 @@ VisitorInfoScreen As screen:
                 FontWeight: =FontWeight.Semibold
                 Items: =["Yes","No"]
                 OnChange: =Set(_lastSelectedSymptoms,symptoms.SelectedText.Value)
+                OnSelect: =Set(_lastSelectedSymptoms,symptoms.SelectedText.Value)
                 Tooltip: =If(!IsBlank(symptoms.Selected), false, "Are you having the listed symptoms?")
                 X: =453
                 Y: =54
