@@ -124,7 +124,10 @@ VisitorInfoScreen As screen:
                                 Distinct(
                                    Filter(
                                       VisitorInformation,
-                                      StartsWith('Phone Number', visitorSearchByPhone.Text)
+                                      StartsWith(
+                                         'Phone Number',
+                                         visitorSearchByPhone.Text
+                                      )
                                    ),
                                    'Full Name'
                                 ),
@@ -133,7 +136,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult-2)
+                             Len(wResult) - 2
                           )
                        )
                     )

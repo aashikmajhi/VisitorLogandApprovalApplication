@@ -296,19 +296,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.homeicon"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.homeicon_1"
               }
             }
           ],
@@ -326,19 +326,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex"
+                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex",
+                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.homeicon"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.homeicon_1"
               }
             }
           ],
@@ -356,19 +356,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.visitorSearchByPhone"
               }
             }
           ],
@@ -386,19 +386,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName"
               }
             }
           ],
@@ -416,19 +416,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName"
               }
             }
           ],
@@ -446,19 +446,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName"
               }
             }
           ],
@@ -476,19 +476,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason"
               }
             }
           ],
@@ -506,19 +506,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms"
               }
             }
           ],
@@ -536,49 +536,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel"
+                  "fullyQualifiedName": "VisitorInfoScreen.employeeList.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel",
+                  "fullyQualifiedName": "VisitorInfoScreen.employeeList.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewVisitorScreen",
-                "type": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender"
+                "module": "VisitorInfoScreen",
+                "type": "VisitorInfoScreen.employeeList"
               }
             }
           ],
@@ -1166,19 +1136,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.homeicon_1"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.homeicon"
               }
             }
           ],
@@ -1196,19 +1166,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.TabIndex"
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.homeicon_1.TabIndex",
+                  "fullyQualifiedName": "NewVisitorScreen.homeicon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.homeicon_1"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.homeicon"
               }
             }
           ],
@@ -1226,19 +1196,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.visitorSearchByPhone.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.visitorSearchByPhone"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Salutation_DataCard1.salutation"
               }
             }
           ],
@@ -1256,19 +1226,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Name_DataCard1'.visitorName"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.AddPicture1"
               }
             }
           ],
@@ -1286,19 +1256,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.regularVisitorsDetail.'Visitor Company_DataCard1'.vistorCompanyName"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.VisitorPhoto_DataCard1.Camera1"
               }
             }
           ],
@@ -1316,19 +1286,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.regularVisitorsDetail.'Employee Name_DataCard5'.employeeName"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Full Name_DataCard1'.visitorFullName"
               }
             }
           ],
@@ -1346,19 +1316,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.regularVisitorsDetail.'Reason For Visit_DataCard1'.reason"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Company_DataCard1.visitorCompany"
               }
             }
           ],
@@ -1376,19 +1346,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.regularVisitorsDetail.Symptoms_DataCard1.symptoms"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Email Address_DataCard1'.visitorEmail"
               }
             }
           ],
@@ -1406,19 +1376,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "VisitorInfoScreen.employeeList.AccessibleLabel"
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "VisitorInfoScreen.employeeList.AccessibleLabel",
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "VisitorInfoScreen",
-                "type": "VisitorInfoScreen.employeeList"
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.'Phone Number_DataCard1'.visitorPhoneNumber"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NewVisitorScreen",
+                "type": "NewVisitorScreen.visitorsDetail.Gender_DataCard1.visitorGender"
               }
             }
           ],
