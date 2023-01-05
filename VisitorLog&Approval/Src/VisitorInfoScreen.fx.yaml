@@ -124,10 +124,7 @@ VisitorInfoScreen As screen:
                                 Distinct(
                                    Filter(
                                       VisitorInformation,
-                                      StartsWith(
-                                         'Phone Number',
-                                         visitorSearchByPhone.Text
-                                      )
+                                      StartsWith('Phone Number', visitorSearchByPhone.Text)
                                    ),
                                    'Full Name'
                                 ),
@@ -136,7 +133,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult) - 2
+                             Len(wResult-2)
                           )
                        )
                     )
@@ -436,6 +433,7 @@ VisitorInfoScreen As screen:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Items: =["Yes","No"]
+                OnChange: =Set(_lastSelectedSymptoms,symptoms.SelectedText.Value)
                 Tooltip: =If(!IsBlank(symptoms.Selected), false, "Are you having the listed symptoms?")
                 X: =453
                 Y: =54
@@ -531,7 +529,7 @@ VisitorInfoScreen As screen:
                 )
             );
             ResetForm(regularVisitorsDetail);
-            Reset(reason);
+            Reset('Reason For Visit_DataCard1')
             Reset(employeeName);
             Reset([@employeeList]);
         Size: =20
