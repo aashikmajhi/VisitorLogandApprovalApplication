@@ -23,6 +23,11 @@ NewVisitorScreen As screen:
         Height: =58
         OnSelect: |-
             =If(
+                CountRows(Filter(VisitorInformation, ThisRecord.'Phone Number' = visitorPhoneNumber.Text)) > 0, 
+                Notify("Phone Number already exists in the database. Enter your correct number.", NotificationType.Error
+            );
+            
+            If(
                 IsEmpty(Errors(VisitorInformation)),
                 Notify(
                     "Success",
