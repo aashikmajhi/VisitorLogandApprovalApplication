@@ -88,3 +88,23 @@ MainScreen As screen:
         Y: =196
         ZIndex: =9
 
+    admin_1 As button:
+        Fill: =RGBA(39, 113, 194, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+        Font: =Font.'Lato Black'
+        Height: =98
+        OnSelect: |-
+            =Reset(searchVisitedEmployee);
+            Navigate(LogRecord);
+        RadiusBottomLeft: =9
+        RadiusBottomRight: =9
+        RadiusTopLeft: =9
+        RadiusTopRight: =9
+        Size: =22
+        Text: ="Admin"
+        Visible: =isUserAdminSPList
+        Width: =372
+        X: =782
+        Y: =98
+        ZIndex: =10
+
