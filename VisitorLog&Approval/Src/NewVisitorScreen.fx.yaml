@@ -648,7 +648,7 @@ NewVisitorScreen As screen:
             right_4 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber.Text), Icon.Check, Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber.Text),Icon.Check, Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12
