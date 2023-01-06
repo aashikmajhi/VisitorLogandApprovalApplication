@@ -28,13 +28,14 @@ NewVisitorScreen As screen:
                     "Success",
                     NotificationType.Success
                 );
+               
                 Navigate(VisitorInfoScreen),
                 Notify(
                     First(Errors(VisitorInformation)).Message,
                     NotificationType.Error
                 )
             );
-            Patch(
+             Patch(
                 VisitorInformation,
                 visitorsDetail.Updates
                 );
