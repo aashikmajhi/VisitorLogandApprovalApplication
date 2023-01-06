@@ -561,7 +561,8 @@ NewVisitorScreen As screen:
                 Format: =TextFormat.Number
                 HintText: ="9XXX"
                 MaxLength: =Parent.MaxLength
-                OnChange: =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text)
+                OnChange: |
+                    =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text);
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
