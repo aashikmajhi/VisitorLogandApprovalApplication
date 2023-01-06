@@ -1,0 +1,350 @@
+LogRecord As screen:
+    BackgroundImage: ='Background Image'
+    ImagePosition: =ImagePosition.Fill
+
+    infoLbl_4 As label:
+        Font: =Font.Verdana
+        FontWeight: =FontWeight.Semibold
+        Height: =80
+        Size: =28
+        Text: ="Search Visitor Log"
+        Width: =487
+        X: =439
+        Y: =97
+        ZIndex: =1
+
+    homeicon_4 As icon.Home:
+        Color: =RGBA(9, 33, 98, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(MainScreen)
+        X: =1259
+        Y: =104
+        ZIndex: =2
+
+    SearchEmployee_1 As label:
+        BorderStyle: =BorderStyle.None
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Search Employee"
+        Width: =249
+        X: =21
+        Y: =186
+        ZIndex: =3
+
+    searchVisitedEmployee_1 As combobox:
+        ChevronBackground: =RGBA(39, 67, 125, 1)
+        DisplayFields: =["DisplayName"]
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        InputTextPlaceholder: ="Search Employee"
+        Items: |-
+            =Filter(Office365Users.SearchUser({searchTerm:searchVisitedEmployee_1.SearchText}),Not(IsBlank(Department)))
+        NoSelectionText: =
+        Reset: =true
+        SearchFields: =["DisplayName"]
+        SearchItems: |-
+            =Search(Filter(Office365Users.SearchUser({searchTerm:searchVisitedEmployee_1.SearchText}),Not(IsBlank(Department))),searchVisitedEmployee_1.SearchText,"DisplayName")
+        SelectMultiple: =false
+        Width: =348
+        X: =283
+        Y: =186
+        ZIndex: =4
+
+    name_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Name"
+        X: =42
+        Y: =237
+        ZIndex: =5
+
+    companyInfo_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Company Info"
+        X: =260
+        Y: =237
+        ZIndex: =6
+
+    visitReason_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        Size: =15
+        Text: ="Reason for Visit"
+        Width: =168
+        X: =421
+        Y: =237
+        ZIndex: =7
+
+    gender_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Gender"
+        Width: =98
+        X: =589
+        Y: =237
+        ZIndex: =8
+
+    persontomeet_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Person To Meet"
+        Width: =195
+        X: =691
+        Y: =237
+        ZIndex: =9
+
+    created_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Created"
+        X: =886
+        Y: =237
+        ZIndex: =10
+
+    stat_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =15
+        Text: ="Status"
+        X: =1109
+        Y: =237
+        ZIndex: =11
+
+    Rectangle1_1 As rectangle:
+        BorderThickness: =2
+        Height: =0
+        Width: =1332
+        X: =12
+        Y: =275
+        ZIndex: =13
+
+    Gallery1_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =3
+        Height: =475
+        Items: =If(searchVisitedEmployee_1.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Person To Visit'=searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created",Descending),If(searchVisitedEmployee_1.Selected.DisplayName<>IsBlank("") && searchVisitedEmployee_1.Selected.DisplayName=IsBlank(""),SortByColumns(Filter('Visitor Request', 'Person To Visit' = searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created", Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate_1.SelectedDate && Created<=toDate_1.SelectedDate,1,Days), "Created", Ascending)))
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =65
+        Width: =1344
+        X: =12
+        Y: =277
+        ZIndex: =14
+
+        separator_1 As rectangle:
+            BorderThickness: =1
+            Height: =3
+            OnSelect: =Select(Parent)
+            Width: =1334
+            Y: =62
+            ZIndex: =1
+
+        VisitorfullName_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Visitor Name'
+            Width: =186
+            Wrap: =false
+            X: =12
+            Y: =14
+            ZIndex: =2
+
+        visitorcompanyName_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Visitor Company'
+            Width: =162
+            Wrap: =false
+            X: =216
+            Y: =14
+            ZIndex: =3
+
+        visReason_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Reason For Visit'.Value
+            Width: =123
+            Wrap: =false
+            X: =418
+            Y: =14
+            ZIndex: =4
+
+        sex_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Gender.Value
+            Width: =90
+            Wrap: =false
+            X: =572
+            Y: =14
+            ZIndex: =5
+
+        visitingWhom_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Person To Visit'
+            Width: =208
+            Wrap: =false
+            X: =662
+            Y: =14
+            ZIndex: =6
+
+        createTiming_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Created
+            Width: =208
+            Wrap: =false
+            X: =851
+            Y: =14
+            ZIndex: =7
+
+        visitStatus_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Visit Status'.Value
+            Width: =220
+            Wrap: =false
+            X: =1055
+            Y: =9
+            ZIndex: =8
+
+        nextBtn_1 As arrow:
+            Fill: =Switch(ThisItem.'Visit Status'.Value,"Visit Completed",Green,"Pending Security Check",Red,"Security Check Completed",Blue)
+            OnSelect: |-
+                =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
+                If(visitStatus_1.Text = "Visit Completed",Navigate(VisitorCheckScreen), Navigate(VisitorCheckScreen))
+            X: =1274
+            Y: =11
+            ZIndex: =9
+
+    fromDate_1 As datepicker:
+        BorderColor: =RGBA(210, 215, 218, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        OnChange: =true
+        OnSelect: =true
+        PaddingLeft: =5
+        PaddingTop: =5
+        Reset: =true
+        Tooltip: =
+        Width: =150
+        X: =992
+        Y: =186
+        ZIndex: =15
+
+    Label5_2 As label:
+        Align: =Align.Right
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FontWeight: =FontWeight.Semibold
+        Text: ="Date From"
+        Width: =100
+        X: =889
+        Y: =186
+        ZIndex: =16
+
+    toDate_1 As datepicker:
+        BorderColor: =RGBA(210, 215, 218, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        OnChange: =true
+        OnSelect: =true
+        PaddingLeft: =5
+        PaddingTop: =5
+        Reset: =true
+        Tooltip: =
+        Width: =150
+        X: =1186
+        Y: =186
+        ZIndex: =17
+
+    Label5_3 As label:
+        Align: =Align.Right
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FontWeight: =FontWeight.Semibold
+        Text: ="To"
+        Width: =35
+        X: =1149
+        Y: =186
+        ZIndex: =18
+
+    companyName_6 As companyName:
+        X: =208
+        Y: =10
+        ZIndex: =19
+
+    Button1_1 As button:
+        Fill: =RGBA(29, 49, 64, 1)
+        Height: =30
+        OnSelect: =Reset(toDate_1) And Reset(fromDate_1) And Reset(searchVisitedEmployee_1)
+        PaddingBottom: =2
+        PaddingLeft: =2
+        PaddingRight: =2
+        PaddingTop: =2
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =12
+        Text: ="Reset"
+        Width: =65
+        X: =819
+        Y: =192
+        ZIndex: =20
+

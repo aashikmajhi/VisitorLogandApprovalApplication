@@ -116,7 +116,8 @@
     "MainScreen",
     "NewVisitorScreen",
     "VisitorInfoScreen",
-    "SearchVisitorDetailsScreen",
+    "ViewVisitorStatus",
+    "LogRecord",
     "VisitorCheckScreen"
   ]
 }

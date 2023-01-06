@@ -114,6 +114,7 @@ VisitorInfoScreen As screen:
 
             visitorName As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
                 Default: |-
                     =If(
                        !IsBlank(visitorSearchByPhone.Text) && Len(visitorSearchByPhone.Text)>8,
@@ -210,6 +211,7 @@ VisitorInfoScreen As screen:
 
             vistorCompanyName As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
                 Default: |-
                     =If(
                        !IsBlank(visitorSearchByPhone.Text) && Len(visitorSearchByPhone.Text)>8,
@@ -438,6 +440,7 @@ VisitorInfoScreen As screen:
                 Items: =["Yes","No"]
                 OnChange: =Set(_lastSelectedSymptoms,symptoms.SelectedText.Value)
                 OnSelect: =Set(_lastSelectedSymptoms,symptoms.SelectedText.Value)
+                Reset: =true
                 Tooltip: =If(!IsBlank(symptoms.Selected), false, "Are you having the listed symptoms?")
                 X: =453
                 Y: =54

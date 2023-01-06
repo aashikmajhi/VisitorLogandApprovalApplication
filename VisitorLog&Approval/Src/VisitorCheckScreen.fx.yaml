@@ -601,7 +601,7 @@ VisitorCheckScreen As screen:
                     "Success",
                     NotificationType.Success
                 );
-                Navigate(SearchVisitorDetailsScreen),
+                Navigate(ViewVisitorStatus),
                 Notify(
                     First(Errors('Visitor Request')).Message,
                     NotificationType.Error
@@ -622,7 +622,7 @@ VisitorCheckScreen As screen:
 
     Icon1 As icon.ChevronLeft:
         Icon: =Icon.ArrowLeft
-        OnSelect: =Navigate(SearchVisitorDetailsScreen)
+        OnSelect: =Navigate(ViewVisitorStatus)
         X: =34
         Y: =94
         ZIndex: =11

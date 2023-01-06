@@ -291,6 +291,7 @@ NewVisitorScreen As screen:
                 Layout: =Layout.Horizontal
                 OnSelect: =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female")
                 RadioSize: =30
+                Reset: =true
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
                 Width: =392
                 X: =128
@@ -340,6 +341,7 @@ NewVisitorScreen As screen:
 
             visitorFullName As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -398,6 +400,7 @@ NewVisitorScreen As screen:
 
             visitorCompany As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -468,6 +471,7 @@ NewVisitorScreen As screen:
 
             visitorEmail As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Clear: =true
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode

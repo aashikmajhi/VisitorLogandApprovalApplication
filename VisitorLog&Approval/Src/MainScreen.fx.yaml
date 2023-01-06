@@ -61,7 +61,7 @@ MainScreen As screen:
         Height: =98
         OnSelect: |-
             =Reset(searchVisitedEmployee);
-            Navigate(SearchVisitorDetailsScreen);
+            Navigate(ViewVisitorStatus);
         RadiusBottomLeft: =9
         RadiusBottomRight: =9
         RadiusTopLeft: =9
