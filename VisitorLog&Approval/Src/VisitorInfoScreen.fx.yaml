@@ -543,7 +543,7 @@ VisitorInfoScreen As screen:
             ResetForm(regularVisitorsDetail);
             Reset([@employeeList]);
             Reset(visitorSearchByPhone);
-             ClearData(_lastEnteredPhoneNumber);
+             Set(_lastEnteredPhoneNumber,"");
         Size: =20
         Text: ="Submit"
         Width: =206
