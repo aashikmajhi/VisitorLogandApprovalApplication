@@ -23,11 +23,6 @@ NewVisitorScreen As screen:
         Height: =58
         OnSelect: |-
             =If(
-                CountRows(Filter(VisitorInformation, ThisRecord.'Phone Number' = visitorPhoneNumber.Text)) > 0, 
-                Notify("Phone Number already exists in the database. Enter your correct number.", NotificationType.Error
-            );
-            
-            If(
                 IsEmpty(Errors(VisitorInformation)),
                 Notify(
                     "Success",
@@ -45,7 +40,7 @@ NewVisitorScreen As screen:
                 visitorsDetail.Updates
                 );
             
-            ResetForm(visitorsDetail)
+            ResetForm(visitorsDetail);
         Size: =20
         Text: ="Submit"
         Width: =207
@@ -566,8 +561,9 @@ NewVisitorScreen As screen:
                 Format: =TextFormat.Number
                 HintText: ="9XXX"
                 MaxLength: =Parent.MaxLength
-                OnChange: |
+                OnChange: |-
                     =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text);
+                    If(CountRows(Filter(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)) > 0,Notify("Phone Number already exists. Enter your correct phone number."));
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -575,7 +571,7 @@ NewVisitorScreen As screen:
                 RadiusTopRight: =0
                 VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey6.X + DataCardKey6.Width
+                X: =255
                 Y: =10
                 ZIndex: =2
 
