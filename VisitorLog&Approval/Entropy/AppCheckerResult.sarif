@@ -2126,6 +2126,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.'Visitor Name_DataCard2'.StarVisible17.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.'Visitor Name_DataCard2'.StarVisible17.Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "VisitorCheckScreen",
+                "type": "VisitorCheckScreen.visitorCheckForm.'Visitor Name_DataCard2'.StarVisible17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.'Visitor Company_DataCard2'.StarVisible18.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "VisitorCheckScreen.visitorCheckForm.'Visitor Company_DataCard2'.StarVisible18.Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "VisitorCheckScreen",
+                "type": "VisitorCheckScreen.visitorCheckForm.'Visitor Company_DataCard2'.StarVisible18"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "VisitorCheckScreen.btnSubmit_3.Visible"
                 }
               ],

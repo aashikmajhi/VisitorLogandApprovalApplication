@@ -163,6 +163,15 @@ NewVisitorScreen As screen:
                 Y: =12
                 ZIndex: =7
 
+            right_5 As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: =If(!IsBlank(Image2), Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =1039
+                Y: =102
+                ZIndex: =8
+
         Gender_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Gender"
@@ -236,10 +245,10 @@ NewVisitorScreen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Salutation")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =67
+            Height: =29
             Required: =false
             Update: =salutation.Selected
-            Width: =624
+            Width: =626
             X: =1
             Y: =1
             ZIndex: =6
@@ -276,10 +285,8 @@ NewVisitorScreen As screen:
                 Color: =RGBA(39, 67, 125, 1)
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisplayMode: =DisplayMode.View
-                Fill: =RGBA(39, 67, 125, 1)
                 Height: =DataCardKey5.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
@@ -297,8 +304,17 @@ NewVisitorScreen As screen:
                 Reset: =true
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
                 Width: =392
-                X: =128
+                X: =234
                 ZIndex: =5
+
+            right As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: =If(!IsBlank(salutation.Selected.Value), Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =580
+                Y: =8
+                ZIndex: =6
 
         "'Full Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -356,7 +372,7 @@ NewVisitorScreen As screen:
                 RadiusTopRight: =0
                 Tooltip: =If(!IsBlank(visitorFullName.Text), "", "Name can not be blank")
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey1.X + DataCardKey1.Width
+                X: =235
                 Y: =10
                 ZIndex: =3
 
@@ -372,6 +388,15 @@ NewVisitorScreen As screen:
                 X: =30
                 Y: =10 + (visitorFullName.Height / 2) - (Self.Height / 2)
                 ZIndex: =4
+
+            right_1 As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: =If(!IsBlank(visitorFullName.Text), Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =578
+                Y: =12
+                ZIndex: =5
 
         Company_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -415,7 +440,7 @@ NewVisitorScreen As screen:
                 RadiusTopRight: =0
                 Tooltip: =If(!IsBlank(visitorCompany.Text), "", "Company can not be blank")
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey3.X + DataCardKey3.Width
+                X: =225
                 Y: =10
                 ZIndex: =2
 
@@ -443,6 +468,15 @@ NewVisitorScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey3.Y
                 ZIndex: =4
+
+            right_3 As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: = If(!IsBlank(visitorCompany.Text), Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =578
+                Y: =12
+                ZIndex: =5
 
         "'Email Address_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -497,7 +531,7 @@ NewVisitorScreen As screen:
                         "the Email should be in the format example@example.com"
                     )
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey2.X + DataCardKey2.Width
+                X: =235
                 Y: =10
                 ZIndex: =2
 
@@ -525,6 +559,21 @@ NewVisitorScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey2.Y
                 ZIndex: =4
+
+            right_2 As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: |-
+                    = If(!IsBlank(visitorEmail.Text) || IsMatch(
+                            visitorEmail.Text,
+                            Match.Email
+                        ),
+                        "",
+                        "the Email should be in the formate example@example.com",Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =578
+                Y: =12
+                ZIndex: =5
 
         "'Phone Number_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -573,7 +622,7 @@ NewVisitorScreen As screen:
                 RadiusTopRight: =0
                 VirtualKeyboardMode: =VirtualKeyboardMode.Numeric
                 Width: =(Parent.Width - 60) * 0.6
-                X: =255
+                X: =225
                 Y: =10
                 ZIndex: =2
 
@@ -601,6 +650,21 @@ NewVisitorScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey6.Y
                 ZIndex: =4
+
+            right_4 As icon.Check:
+                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Height: =38
+                Icon: |-
+                    =If(!IsBlank(visitorPhoneNumber.Text) || IsMatch(
+                            visitorPhoneNumber.Text,
+                            Digit & Digit & Digit & Digit & Digit & Digit & Digit  & Digit & Digit & Digit
+                        ),
+                        "",
+                        "the mobile must be 10 digit", Icon.Check, Icon.Cancel)
+                Width: =46
+                X: =578
+                Y: =12
+                ZIndex: =5
 
     companyName_4 As companyName:
         X: =213

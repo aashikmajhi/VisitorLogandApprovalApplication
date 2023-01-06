@@ -76,6 +76,7 @@ VisitorInfoScreen As screen:
 
             StarVisible29 As label:
                 Align: =Align.Center
+                Color: =If(!IsBlank(employeeName.Text),Red, Green)
                 Height: =DataCardKey29.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -173,6 +174,8 @@ VisitorInfoScreen As screen:
 
             StarVisible8 As label:
                 Align: =Align.Center
+                Color: =If(!IsBlank(visitorName.Text),Red,Green)
+                FontWeight: =FontWeight.Bold
                 Height: =DataCardKey8.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -272,6 +275,7 @@ VisitorInfoScreen As screen:
 
             StarVisible9 As label:
                 Align: =Align.Center
+                Color: =If(!IsBlank(vistorCompanyName.Text),Red,Green)
                 Height: =DataCardKey9.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -349,6 +353,7 @@ VisitorInfoScreen As screen:
 
             StarVisible10 As label:
                 Align: =Align.Center
+                Color: =If(!IsBlank(reason.Selected.Value),Red,Green)
                 Height: =DataCardKey10.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -403,7 +408,6 @@ VisitorInfoScreen As screen:
                 Align: =Align.Center
                 Height: =DataCardKey11.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey11.Y
