@@ -620,3 +620,10 @@ VisitorCheckScreen As screen:
         Y: =18
         ZIndex: =10
 
+    Icon1 As icon.ChevronLeft:
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(SearchVisitorDetailsScreen)
+        X: =34
+        Y: =94
+        ZIndex: =11
+
