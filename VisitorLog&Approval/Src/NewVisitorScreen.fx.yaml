@@ -165,6 +165,7 @@ NewVisitorScreen As screen:
 
             right_5 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(Image2), Icon.Check, Icon.Cancel)
                 Width: =46
@@ -309,6 +310,7 @@ NewVisitorScreen As screen:
 
             right As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(salutation.Selected.Value), Icon.Check, Icon.Cancel)
                 Width: =46
@@ -391,6 +393,7 @@ NewVisitorScreen As screen:
 
             right_1 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(visitorFullName.Text), Icon.Check, Icon.Cancel)
                 Width: =46
@@ -471,6 +474,7 @@ NewVisitorScreen As screen:
 
             right_3 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: = If(!IsBlank(visitorCompany.Text), Icon.Check, Icon.Cancel)
                 Width: =46
@@ -562,6 +566,7 @@ NewVisitorScreen As screen:
 
             right_2 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: = If(!IsBlank(visitorEmail.Text),Icon.Check, Icon.Cancel)
                 Width: =46
@@ -608,7 +613,7 @@ NewVisitorScreen As screen:
                 MaxLength: =Parent.MaxLength
                 OnChange: |-
                     =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text);
-                    If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),Notify("Phone Number already exists. Enter your correct phone number."))
+                    If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),Icon.Cancel && BorderStyle.Dashed,Icon.Check)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -647,6 +652,7 @@ NewVisitorScreen As screen:
 
             right_4 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
+                DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(visitorPhoneNumber.Text),Icon.Check, Icon.Cancel)
                 Width: =46

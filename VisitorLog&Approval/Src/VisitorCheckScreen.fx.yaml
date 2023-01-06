@@ -100,6 +100,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(DataCardValue2.Text),Red,Green)
                 Height: =DataCardKey14.Height
                 Text: ="*"
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey14.Y
@@ -161,6 +162,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(Image5.Image),Red,Green)
                 Height: =DataCardKey15.Height
                 Text: ="*"
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey15.Y
@@ -231,7 +233,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(visitorName.Text),Red,Green)
                 Height: =DataCardKey17.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey17.Y
@@ -302,7 +304,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(vistorCompanyName.Text),Red,Green)
                 Height: =DataCardKey18.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey18.Y
@@ -373,7 +375,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(whomVisited.Text),Red,Green)
                 Height: =DataCardKey21.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey21.Y
@@ -445,7 +447,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(purposeofvisit.Selected.Value),Red,Green)
                 Height: =DataCardKey19.Height
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey19.Y
@@ -500,6 +502,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(visitorGender1.Selected),Red,Green)
                 Height: =DataCardKey22.Height
                 Text: ="*"
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey22.Y
@@ -587,6 +590,7 @@ VisitorCheckScreen As screen:
                 Color: =If(!IsBlank(DataCardValue23.Selected.Value),Red,Green)
                 Height: =DataCardKey23.Height
                 Text: ="*"
+                Visible: =false
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey23.Y
