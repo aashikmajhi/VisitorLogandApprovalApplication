@@ -563,13 +563,7 @@ NewVisitorScreen As screen:
             right_2 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 Height: =38
-                Icon: |-
-                    = If(!IsBlank(visitorEmail.Text) || IsMatch(
-                            visitorEmail.Text,
-                            Match.Email
-                        ),
-                        "",
-                        "the Email should be in the formate example@example.com",Icon.Check, Icon.Cancel)
+                Icon: = If(!IsBlank(visitorEmail.Text),Icon.Check, Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12
@@ -654,13 +648,7 @@ NewVisitorScreen As screen:
             right_4 As icon.Check:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 Height: =38
-                Icon: |-
-                    =If(!IsBlank(visitorPhoneNumber.Text) || IsMatch(
-                            visitorPhoneNumber.Text,
-                            Digit & Digit & Digit & Digit & Digit & Digit & Digit  & Digit & Digit & Digit
-                        ),
-                        "",
-                        "the mobile must be 10 digit", Icon.Check, Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber.Text), Icon.Check, Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12
