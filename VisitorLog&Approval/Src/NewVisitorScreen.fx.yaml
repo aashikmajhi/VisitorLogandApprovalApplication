@@ -33,7 +33,9 @@ NewVisitorScreen As screen:
                 Notify(
                     First(Errors(VisitorInformation)).Message,
                     NotificationType.Error
-                )
+                );
+                IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),
+                Notify("Phone Number already exists. Enter your correct phone number.")
             );
              Patch(
                 VisitorInformation,
@@ -563,7 +565,7 @@ NewVisitorScreen As screen:
                 MaxLength: =Parent.MaxLength
                 OnChange: |-
                     =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text);
-                    If(CountRows(Filter(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)) > 0,Notify("Phone Number already exists. Enter your correct phone number."));
+                    If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),Notify("Phone Number already exists. Enter your correct phone number."))
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
