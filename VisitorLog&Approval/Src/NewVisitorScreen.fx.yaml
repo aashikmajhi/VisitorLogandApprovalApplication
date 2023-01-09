@@ -33,23 +33,22 @@ NewVisitorScreen As screen:
                 Notify(
                     First(Errors(VisitorInformation)).Message,
                     NotificationType.Error
-                );
-                
+                );    
             );
             
             If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),
                 Notify("Phone Number already exists. Enter your correct phone number."),
-             Patch(
-                VisitorInformation,
-                visitorsDetail.Updates
+                Patch(
+                    VisitorInformation,
+                    visitorsDetail.Updates
                 );
+                Reset(salutation);
+                Reset(visitorFullName);
+                Reset(visitorCompany);
+                Reset(visitorEmail);
+                ResetForm(visitorsDetail)
+            );
             
-            ResetForm(visitorsDetail));
-            
-            Reset(salutation);
-            Reset(visitorFullName);
-            Reset(visitorCompany);
-            Reset(visitorEmail);
             Reset(visitorPhoneNumber);
         Size: =20
         Text: ="Submit"
