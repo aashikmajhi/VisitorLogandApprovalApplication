@@ -534,6 +534,7 @@ VisitorInfoScreen As screen:
                     "Your request have been registered.",
                     NotificationType.Success
                 );
+                Set(_lastEnteredPhoneNumber,Blank());
                 Navigate(MainScreen),
                 Notify(
                     First(Errors('Visitor Request')).Message,
@@ -543,7 +544,6 @@ VisitorInfoScreen As screen:
             ResetForm(regularVisitorsDetail);
             Reset([@employeeList]);
             Reset(visitorSearchByPhone);
-             Set(_lastEnteredPhoneNumber,"");
         Size: =20
         Text: ="Submit"
         Width: =206
