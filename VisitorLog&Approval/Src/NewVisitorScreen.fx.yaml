@@ -620,7 +620,8 @@ NewVisitorScreen As screen:
                 MaxLength: =Parent.MaxLength
                 OnChange: |-
                     =Set(_lastEnteredPhoneNumber, visitorPhoneNumber.Text);
-                    If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),Icon.Cancel && BorderStyle.Dashed,Icon.Check)
+                    //If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber.Text)),Icon.Cancel,Icon.Check);
+                    //If(CountRows(Filter(VisitorInformation,'Phone Number' = visitorPhoneNumber.Text))>0,Notify("Phone Number already exists. Enter your correct phone number.",NotificationType.Error));
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -661,7 +662,7 @@ NewVisitorScreen As screen:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber.Text),Icon.Check, Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber.Text) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber.Text))<=0,Icon.Check, Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12
