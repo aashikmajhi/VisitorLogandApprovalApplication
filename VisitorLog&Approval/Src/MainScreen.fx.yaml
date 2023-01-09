@@ -20,7 +20,8 @@ MainScreen As screen:
         Font: =Font.'Lato Black'
         Height: =106
         OnSelect: |-
-            =ResetForm(visitorsDetail);
+            =Set(_lastEnteredPhoneNumber,"");
+            ResetForm(visitorsDetail);
             Navigate(NewVisitorScreen);
         RadiusBottomLeft: =9
         RadiusBottomRight: =9
@@ -39,7 +40,8 @@ MainScreen As screen:
         Font: =Font.'Lato Black'
         Height: =98
         OnSelect: |-
-            =Reset(visitorSearchByPhone);
+            =Set(_lastEnteredPhoneNumber,"");
+            Reset(visitorSearchByPhone);
             Reset([@employeeList]);
             ResetForm(regularVisitorsDetail);
             Navigate(VisitorInfoScreen);
