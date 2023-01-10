@@ -509,7 +509,7 @@ VisitorCheckScreen As screen:
                 ZIndex: =4
 
             visitorGender1 As radio:
-                Default: =ThisItem.Gender.Value
+                Default: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,Gender.Value)
                 DisabledColor: =RGBA(22, 38, 50, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Font: =Font.Lato
