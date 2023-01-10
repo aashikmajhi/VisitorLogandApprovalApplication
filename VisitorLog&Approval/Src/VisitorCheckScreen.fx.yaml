@@ -603,6 +603,7 @@ VisitorCheckScreen As screen:
         Fill: =RGBA(54, 176, 75, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'
+        HoverBorderColor: =ColorFade(Self.HoverFill, 20%)
         OnSelect: |-
             =SubmitForm(visitorCheckForm);
             If(
