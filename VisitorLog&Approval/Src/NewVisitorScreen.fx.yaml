@@ -43,7 +43,8 @@ NewVisitorScreen As screen:
                         Reset(visitorEmail);
                         ResetForm(visitorsDetail);
                         Navigate(VisitorInfoScreen)
-                ) &&        
+                    ) 
+                    &&        
                     Notify(
                         "Success",
                         NotificationType.Success
