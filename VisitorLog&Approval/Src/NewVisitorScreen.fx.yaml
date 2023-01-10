@@ -43,14 +43,14 @@ NewVisitorScreen As screen:
                     Reset(visitorCompany);
                     Reset(visitorEmail);
                     ResetForm(visitorsDetail);
-                
+                    Navigate(VisitorInfoScreen)
                 ),
             
                 //&& 
                 
                 //Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You have been     successfully registered as a visitor in the organization. Please checkin as a regular visitor with your phone number while         visiting the organization. Thank You!" & Link),
                
-                    Navigate(VisitorInfoScreen),
+                    
                     Notify(
                         First(Errors(VisitorInformation)).Message,
                         NotificationType.Error
