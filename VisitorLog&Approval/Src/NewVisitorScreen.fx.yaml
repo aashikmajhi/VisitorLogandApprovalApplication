@@ -21,7 +21,7 @@ NewVisitorScreen As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'
         Height: =58
-        OnSelect: |
+        OnSelect: |+
             =If(
                 IsEmpty(Errors(VisitorInformation)),
                 Notify(
@@ -41,10 +41,8 @@ NewVisitorScreen As screen:
                 Patch(
                     VisitorInformation,
                     visitorsDetail.Updates
-                );  
-            
-                Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","This is a test","hello this is a test.");
-            
+                );     
+            Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your phone number while visiting the organization. Thank You!" & Link);
                 Reset(salutation);
                 Reset(visitorFullName);
                 Reset(visitorCompany);
@@ -53,6 +51,7 @@ NewVisitorScreen As screen:
                 
             );
             Reset(visitorPhoneNumber);
+            
         Size: =20
         Text: ="Submit"
         Width: =207
