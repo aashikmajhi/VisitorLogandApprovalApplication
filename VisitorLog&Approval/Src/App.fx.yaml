@@ -5,6 +5,7 @@ App As appinfo:
             varUser,
             User()
         );
+        //Set(_sendEmailsEnabled,false);
         Set(
             isUserAdminSPList,
             !IsBlank(
