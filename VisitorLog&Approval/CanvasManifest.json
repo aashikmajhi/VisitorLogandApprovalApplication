@@ -118,6 +118,7 @@
     "VisitorInfoScreen",
     "VisitorCheckScreen",
     "ViewVisitorStatus",
-    "LogRecord"
+    "LogRecord",
+    "NewVisitorScreen_1"
   ]
 }
