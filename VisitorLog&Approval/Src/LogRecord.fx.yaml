@@ -136,7 +136,7 @@ LogRecord As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =3
         Height: =475
-        Items: =If(searchVisitedEmployee_1.Selected.DisplayName<>Blank(),SortByColumns(Filter('Visitor Request', 'Person To Visit'=searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created",Descending),If(searchVisitedEmployee_1.Selected.DisplayName<>IsBlank("") && searchVisitedEmployee_1.Selected.DisplayName=IsBlank(""),SortByColumns(Filter('Visitor Request', 'Person To Visit' = searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created", Descending),SortByColumns(Filter('Visitor Request', Created>=fromDate_1.SelectedDate && Created<=toDate_1.SelectedDate,1,Days), "Created", Ascending)))
+        Items: =If(searchVisitedEmployee_1.Selected.DisplayName<>Blank(),SortByColumns(Filter(createdToday, 'Person To Visit'=searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created",Descending),If(searchVisitedEmployee_1.Selected.DisplayName<>IsBlank("") && searchVisitedEmployee_1.Selected.DisplayName=IsBlank(""),SortByColumns(Filter(createdToday, 'Person To Visit' = searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created", Descending),SortByColumns(Filter(createdToday, Created>=fromDate_1.SelectedDate && Created<=toDate_1.SelectedDate,1,Days), "Created", Ascending)))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =65
