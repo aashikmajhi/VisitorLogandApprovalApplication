@@ -460,7 +460,7 @@ VisitorCheckScreen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Visitor Request'],DataSourceInfo.DisplayName,"Gender")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =96
             Required: =false
             Update: =visitorGender1.Selected
             Visible: =true
@@ -509,7 +509,7 @@ VisitorCheckScreen As screen:
                 ZIndex: =4
 
             visitorGender1 As radio:
-                Default: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,Gender.Value)
+                Default: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,Gender)
                 DisabledColor: =RGBA(22, 38, 50, 1)
                 DisplayMode: =DisplayMode.Disabled
                 Font: =Font.Lato
@@ -518,8 +518,8 @@ VisitorCheckScreen As screen:
                 Items: =Choices([@'Visitor Request'].Gender)
                 Layout: =Layout.Horizontal
                 Width: =286
-                X: =190
-                Y: =21
+                X: =243
+                Y: =19
                 ZIndex: =5
 
         "'Visit Status_DataCard2' As typedDataCard.comboBoxEditCard":

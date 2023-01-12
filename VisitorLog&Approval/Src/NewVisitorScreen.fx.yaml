@@ -41,7 +41,7 @@ NewVisitorScreen As screen:
                 visitorsDetail.Updates
             );    
             
-            Office365Outlook.SendEmailV2(visitorEmail,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link);
+            //Office365Outlook.SendEmailV2(visitorEmail,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link);
             
                         Reset(salutation);
                         Reset(visitorFullName);
@@ -183,72 +183,6 @@ NewVisitorScreen As screen:
                 Y: =102
                 ZIndex: =8
 
-        Gender_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Gender"
-            Default: =
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Gender")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =60
-            Required: =false
-            Update: =visitorGender.Selected
-            Visible: =false
-            Width: =624
-            X: =0
-            Y: =1
-            ZIndex: =6
-
-            DataCardKey4 As label:
-                AutoHeight: =true
-                Font: =Font.'Lato Black'
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =14
-                ZIndex: =1
-
-            ErrorMessage4 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =40
-                ZIndex: =3
-
-            StarVisible4 As label:
-                Align: =Align.Center
-                Height: =DataCardKey4.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey4.Y
-                ZIndex: =4
-
-            visitorGender As radio:
-                BorderStyle: =BorderStyle.None
-                Default: =If(salutation.Selected.Value="Mr.","Male","Female")
-                Font: =Font.Lato
-                FontWeight: =FontWeight.Semibold
-                Height: =60
-                Items: =Choices([@VisitorInformation].Gender)
-                Layout: =Layout.Horizontal
-                Tooltip: =If(!IsBlank(visitorGender.Selected), false, "Please choose your gender.")
-                Width: =388
-                X: =144
-                ZIndex: =5
-
         Salutation_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Salutation"
@@ -259,8 +193,8 @@ NewVisitorScreen As screen:
             Height: =29
             Required: =false
             Update: =salutation.Selected
-            Width: =626
-            X: =1
+            Width: =624
+            X: =0
             Y: =1
             ZIndex: =6
 
@@ -327,6 +261,72 @@ NewVisitorScreen As screen:
                 X: =580
                 Y: =8
                 ZIndex: =6
+
+        Gender_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Gender"
+            Default: =
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@VisitorInformation],DataSourceInfo.DisplayName,"Gender")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =60
+            Required: =false
+            Update: =visitorGender.Selected
+            Visible: =true
+            Width: =624
+            X: =1
+            Y: =1
+            ZIndex: =6
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =14
+                ZIndex: =1
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =40
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+            visitorGender As radio:
+                BorderStyle: =BorderStyle.None
+                Default: =If(salutation.Selected.Value="Mr.","Male","Female")
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Height: =60
+                Items: =Choices([@VisitorInformation].Gender)
+                Layout: =Layout.Horizontal
+                Tooltip: =If(!IsBlank(visitorGender.Selected), false, "Please choose your gender.")
+                Width: =388
+                X: =144
+                ZIndex: =5
 
         "'Full Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid

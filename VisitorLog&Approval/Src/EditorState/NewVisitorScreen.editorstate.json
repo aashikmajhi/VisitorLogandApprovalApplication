@@ -5455,7 +5455,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Gender_DataCard1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8343,7 +8343,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Salutation_DataCard1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
