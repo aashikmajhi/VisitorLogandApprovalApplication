@@ -32,6 +32,7 @@ NewVisitorScreen_1 As screen:
                     ),
                     If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber_1.Text)),
                         Notify("Phone Number already exists. Enter your correct phone number."),
+                        
                         Patch(
                             VisitorInformation,{ID: Blank()},
                             visitorsDetail_1.Updates, visitorsDetail_2.Updates
