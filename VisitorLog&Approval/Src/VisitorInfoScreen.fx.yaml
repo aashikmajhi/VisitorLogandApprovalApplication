@@ -138,7 +138,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult) - 2
+                             Len(wResult)
                           )
                        )
                     )
@@ -237,7 +237,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult) - 2
+                             Len(wResult)
                           )
                        )
                     )

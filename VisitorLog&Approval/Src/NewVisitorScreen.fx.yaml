@@ -275,7 +275,7 @@ NewVisitorScreen As screen:
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =20
+                X: =30
                 Y: =10
                 ZIndex: =1
 

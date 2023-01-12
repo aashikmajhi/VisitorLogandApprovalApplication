@@ -32,15 +32,16 @@ NewVisitorScreen_1 As screen:
                     If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber_1.Text)),
                         Notify("Phone Number already exists. Enter your correct phone number."),
                         Patch(
-                            VisitorInformation,
-                            visitorsDetail_1.Updates,visitorsDetail_2.Updates
+                            VisitorInformation,{ID: Blank()},
+                            visitorsDetail_1.Updates, visitorsDetail_2.Updates
                         );   
-                        Office365Outlook.SendEmailV2(visitorEmail_1,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
+                        //Office365Outlook.SendEmailV2(visitorEmail_1,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
             
                         Reset(salutation_1);
                         Reset(visitorFullName_1);
                         Reset(visitorCompany_1);
                         Reset(visitorEmail_1);
+                        Reset(visitorPhoneNumber_1);
                         ResetForm(visitorsDetail_1);
                         ResetForm(visitorsDetail_2);
                         Navigate(VisitorInfoScreen)
@@ -53,7 +54,7 @@ NewVisitorScreen_1 As screen:
             );
             
             
-            Reset(visitorPhoneNumber_1);
+            
             
         Size: =20
         Text: ="Submit"
