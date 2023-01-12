@@ -36,7 +36,7 @@ NewVisitorScreen_2 As screen:
                             VisitorInformation,
                             visitorsDetail_3.Updates
                         );    
-                        Office365Outlook.SendEmailV2(visitorEmail_2,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
+                        //Office365Outlook.SendEmailV2(visitorEmail_2,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
             
                         Reset(salutation_2);
                         Reset(visitorFullName_2);
