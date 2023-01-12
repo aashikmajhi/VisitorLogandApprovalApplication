@@ -2,6 +2,7 @@ NewVisitorScreen_1 As screen:
     BackgroundImage: ='Background Image'
     Fill: =RGBA(0, 0, 0, 0)
     ImagePosition: =ImagePosition.Fill
+    OnVisible: =Collect(VisitorPhoneNumber,VisitorInformation)
 
     infoLbl_5 As label:
         Font: =Font.Verdana
@@ -568,7 +569,8 @@ NewVisitorScreen_1 As screen:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber_1.Text) && IsMatch(visitorPhoneNumber_1.Text,Digit & Digit & Digit & Digit & Digit & Digit & Digit &Digit & Digit & Digit) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber_1.Text))<=0,Icon.Check,Icon.Cancel)
+                Icon: |
+                    =If(!IsBlank(visitorPhoneNumber_1.Text) && IsMatch(visitorPhoneNumber_1.Text,Digit & Digit & Digit & Digit & Digit & Digit & Digit &Digit & Digit & Digit) && CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))=0,Icon.Check,Icon.Cancel)
                 Width: =46
                 X: =620
                 Y: =52
@@ -600,6 +602,7 @@ NewVisitorScreen_1 As screen:
             Height: =472
             Required: =false
             Update: =Image4.Image
+            Visible: =true
             Width: =593
             X: =0
             Y: =0
