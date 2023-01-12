@@ -671,7 +671,7 @@ NewVisitorScreen As screen:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber.Text) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber.Text))<=0,Icon.Check, Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber.Text) && IsMatch(visitorPhoneNumber.Text,Digit & Digit & Digit & Digit & Digit & Digit & Digit &Digit & Digit & Digit) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber.Text))<=0,Icon.Check,Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12

@@ -667,7 +667,7 @@
                 },
                 "region": {
                   "charLength": 76,
-                  "charOffset": 40,
+                  "charOffset": 153,
                   "snippet": {
                     "text": "CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber.Text))"
                   }
@@ -707,7 +707,7 @@
                 },
                 "region": {
                   "charLength": 78,
-                  "charOffset": 42,
+                  "charOffset": 157,
                   "snippet": {
                     "text": "CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber_1.Text))"
                   }

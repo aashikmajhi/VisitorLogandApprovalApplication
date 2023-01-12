@@ -567,7 +567,7 @@ NewVisitorScreen_1 As screen:
                 Color: =If(Self.Icon=Icon.Check, Green, Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber_1.Text) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber_1.Text))<=0,Icon.Check, Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber_1.Text) && IsMatch(visitorPhoneNumber_1.Text,Digit & Digit & Digit & Digit & Digit & Digit & Digit &Digit & Digit & Digit) && CountRows(Filter(VisitorInformation,'Phone Number'=visitorPhoneNumber_1.Text))<=0,Icon.Check,Icon.Cancel)
                 Width: =46
                 X: =620
                 Y: =52
@@ -654,6 +654,7 @@ NewVisitorScreen_1 As screen:
 
             Camera2 As camera:
                 Camera: =0
+                Visible: =If(IsEmpty(Image4)||IsBlankOrError(Image4),true,false)
                 X: =84
                 Y: =72
                 ZIndex: =6
