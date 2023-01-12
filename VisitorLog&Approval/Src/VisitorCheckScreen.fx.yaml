@@ -59,8 +59,6 @@ VisitorCheckScreen As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue2 As text:
@@ -135,7 +133,7 @@ VisitorCheckScreen As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =180
-                Image: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,VisitorPhoto)
+                Image: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,VisitorPhoto.Medium)
                 Tooltip: =Parent.DisplayName
                 Width: =438
                 X: =166
