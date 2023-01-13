@@ -43,7 +43,7 @@ NewVisitorScreen As screen:
             
             //Office365Outlook.SendEmailV2(visitorEmail,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link);
             
-                        Reset(salutation);
+                        
                         Reset(visitorFullName);
                         Reset(visitorCompany);
                         Reset(visitorEmail);
@@ -239,12 +239,16 @@ NewVisitorScreen As screen:
 
             salutation As radio:
                 BorderStyle: =BorderStyle.None
+                Default: =If(reset,"",ThisItem.Salutation.Value)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =54
                 Items: =Choices([@VisitorInformation].Salutation)
                 Layout: =Layout.Horizontal
-                OnSelect: =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female")
+                OnChange: =true
+                OnSelect: |-
+                    =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female");
+                    Set(reset,true)
                 RadioSize: =30
                 Reset: =true
                 Tooltip: =If(!IsBlank(salutation.Selected), false, "The Field can not be blank")
@@ -272,7 +276,7 @@ NewVisitorScreen As screen:
             Height: =60
             Required: =false
             Update: =visitorGender.Selected
-            Visible: =true
+            Visible: =false
             Width: =624
             X: =1
             Y: =1
@@ -317,7 +321,7 @@ NewVisitorScreen As screen:
 
             visitorGender As radio:
                 BorderStyle: =BorderStyle.None
-                Default: =If(salutation.Selected.Value="Mr.","Male","Female")
+                Default: =If(salutation.Selected.Value="Mr.","Male","Female") 
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =60

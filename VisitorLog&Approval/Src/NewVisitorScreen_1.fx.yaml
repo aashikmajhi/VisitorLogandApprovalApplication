@@ -39,7 +39,7 @@ NewVisitorScreen_1 As screen:
                         );   
                         //Office365Outlook.SendEmailV2(visitorEmail_1,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
             
-                        Reset(salutation_1);
+                        
                         Reset(visitorFullName_1);
                         Reset(visitorCompany_1);
                         Reset(visitorEmail_1);
@@ -207,12 +207,15 @@ NewVisitorScreen_1 As screen:
 
             salutation_1 As radio:
                 BorderStyle: =BorderStyle.None
+                Default: =If(reset,"",ThisItem.Salutation.Value)
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =54
                 Items: =Choices([@VisitorInformation].Salutation)
                 Layout: =Layout.Horizontal
-                OnSelect: =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female")
+                OnSelect: |-
+                    =If(ThisItem.Salutation.Value="Mr.",ThisItem.Gender.Value="Male",ThisItem.Gender.Value="Female");
+                    Set(reset,true);
                 RadioSize: =30
                 Reset: =true
                 Tooltip: =If(!IsBlank(salutation_1.Selected), false, "The Field can not be blank")
@@ -618,18 +621,18 @@ NewVisitorScreen_1 As screen:
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =188
-                Y: =26
+                Y: =6
                 ZIndex: =1
 
             Image4 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
-                Height: =Camera2.Height
+                Height: =393
                 Image: =Camera2.Photo
                 Tooltip: =Parent.DisplayName
-                Width: =Camera2.Width
-                X: =84
-                Y: =72
+                Width: =533
+                X: =30
+                Y: =39
                 ZIndex: =2
 
             ErrorMessage13 As label:
@@ -659,18 +662,21 @@ NewVisitorScreen_1 As screen:
 
             Camera2 As camera:
                 Camera: =0
+                Height: =403
                 Visible: =If(IsEmpty(Image4)||IsBlankOrError(Image4),true,false)
-                X: =84
-                Y: =72
+                Width: =533
+                X: =30
+                Y: =39
                 ZIndex: =6
 
             Label3 As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Bold
                 Text: ="Press to take picture"
                 Visible: =If(!IsEmpty(Image4),true,false)
-                Width: =185
-                X: =203
-                Y: =382
+                Width: =195
+                X: =206
+                Y: =432
                 ZIndex: =7
 
             right_12 As icon.Check:
@@ -679,7 +685,7 @@ NewVisitorScreen_1 As screen:
                 Height: =38
                 Icon: =If(!IsBlank(Image4),Icon.Check, Icon.Cancel)
                 Width: =46
-                X: =388
-                Y: =21
+                X: =378
+                Y: =1
                 ZIndex: =8
 

@@ -138,7 +138,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult)
+                             Len(wResult)-2
                           )
                        )
                     )
@@ -237,7 +237,7 @@ VisitorInfoScreen As screen:
                           },
                           Left(
                              wResult,
-                             Len(wResult)
+                             Len(wResult)-2
                           )
                        )
                     )
@@ -437,7 +437,7 @@ VisitorInfoScreen As screen:
 
             symptoms As radio:
                 BorderStyle: =BorderStyle.None
-                Default: ="No"
+                Default: =If(_lastSelectedSymptoms,"",ThisItem.Symptoms)
                 DisabledBorderColor: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 Font: =Font.Lato

@@ -59,6 +59,7 @@ VisitorCheckScreen As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
+                X: =30
                 ZIndex: =1
 
             DataCardValue2 As text:
@@ -133,7 +134,7 @@ VisitorCheckScreen As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =180
-                Image: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,VisitorPhoto.Medium)
+                Image: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,VisitorPhoto)
                 Tooltip: =Parent.DisplayName
                 Width: =438
                 X: =166
@@ -165,6 +166,92 @@ VisitorCheckScreen As screen:
                 Wrap: =false
                 Y: =DataCardKey15.Y
                 ZIndex: =5
+
+        Symptoms_DataCard2 As typedDataCard.toggleEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Symptoms"
+            Default: =ThisItem.Symptoms
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Visitor Request'],DataSourceInfo.DisplayName,"Symptoms")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue1.Value
+            Width: =648
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                ZIndex: =1
+
+            ErrorMessage12 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible12 As label:
+                Align: =Align.Center
+                Height: =DataCardKey7.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+            Label1_1 As label:
+                Font: =Font.Lato
+                Height: =43
+                Text: ="Are you experiencing any of the following?"
+                Width: =378
+                X: =40
+                Y: =13
+                ZIndex: =5
+
+            Label2_1 As label:
+                Font: =Font.Lato
+                Height: =103
+                Text: |-
+                    ="- Sore Throat
+                    - Dry Cough 
+                    - Fever
+                    - Tireness"
+                X: =40
+                Y: =31
+                ZIndex: =6
+
+            symptoms_1 As radio:
+                BorderStyle: =BorderStyle.None
+                Default: =If(_lastSelectedSymptoms,"",ThisItem.Symptoms)
+                DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
+                Items: =["Yes","No"]
+                OnChange: =Set(_lastSelectedSymptoms,symptoms_1.SelectedText.Value)
+                OnSelect: =Set(_lastSelectedSymptoms,symptoms_1.SelectedText.Value)
+                Reset: =true
+                Tooltip: =If(!IsBlank(symptoms_1.Selected), false, "Are you having the listed symptoms?")
+                X: =463
+                Y: =11
+                ZIndex: =7
 
         "'Visitor Name_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
