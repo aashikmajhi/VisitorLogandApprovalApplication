@@ -280,7 +280,7 @@
   "DoesTestStepsMetadataExist": false,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/13/2023 05:34:17",
+  "HeaderLastSavedDateTimeUTC": "01/13/2023 06:35:47",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3018d7c2-94f3-4903-9547-1bd06155626b": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/072a7fa6c6714e29b6bec794f28596cd\"",
@@ -677,7 +677,7 @@
     "ErrorMessage1_1": 217,
     "ErrorMessage10": 81,
     "ErrorMessage11": 88,
-    "ErrorMessage12": 139,
+    "ErrorMessage12": 142,
     "ErrorMessage13": 243,
     "ErrorMessage14": 130,
     "ErrorMessage15": 135,
@@ -732,9 +732,9 @@
     "infoLbl_4": 169,
     "infoLbl_5": 199,
     "Label1": 85,
-    "Label1_1": 141,
+    "Label1_1": 140,
     "Label2": 87,
-    "Label2_1": 142,
+    "Label2_1": 141,
     "Label3": 244,
     "Label4": 12,
     "Label5_2": 173,
@@ -819,7 +819,7 @@
     "stat": 155,
     "stat_1": 184,
     "symptoms": 86,
-    "symptoms_1": 140,
+    "symptoms_1": 139,
     "Symptoms_DataCard1": 82,
     "Symptoms_DataCard2": 136,
     "Test_7F478737223C4B69": 0,
@@ -905,7 +905,7 @@
       "typedDataCard": 34
     },
     "DeserializationLoadTime": 5.3927603,
-    "ErrorCount": 10
+    "ErrorCount": 3
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

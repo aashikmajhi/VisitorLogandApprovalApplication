@@ -662,17 +662,17 @@ NewVisitorScreen_1 As screen:
 
             Camera2 As camera:
                 Camera: =0
-                Height: =403
-                Visible: =If(IsEmpty(Image4)||IsBlankOrError(Image4),true,false)
-                Width: =533
-                X: =30
-                Y: =39
+                Height: =148
+                Width: =131
+                X: =424
+                Y: =284
                 ZIndex: =6
 
             Label3 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
                 Text: ="Press to take picture"
+                Tooltip: =
                 Visible: =If(!IsEmpty(Image4),true,false)
                 Width: =195
                 X: =206

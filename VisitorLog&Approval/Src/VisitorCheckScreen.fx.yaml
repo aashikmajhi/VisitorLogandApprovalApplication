@@ -176,7 +176,8 @@ VisitorCheckScreen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
-            Update: =DataCardValue1.Value
+            Update: =Symptoms_DataCard1.Default
+            Visible: =false
             Width: =648
             X: =0
             Y: =4
@@ -203,7 +204,7 @@ VisitorCheckScreen As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue1.Y + DataCardValue1.Height
+                Y: =Label2_1.Y + Label2_1.Height
                 ZIndex: =3
 
             StarVisible12 As label:
@@ -239,7 +240,7 @@ VisitorCheckScreen As screen:
 
             symptoms_1 As radio:
                 BorderStyle: =BorderStyle.None
-                Default: =If(_lastSelectedSymptoms,"",ThisItem.Symptoms)
+                Default: =LookUp(VisitorInformation,'Full Name'=visitor_name.Text,_lastSelectedSymptoms)
                 DisabledBorderColor: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 Font: =Font.Lato
