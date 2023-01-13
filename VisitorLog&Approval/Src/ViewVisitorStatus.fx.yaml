@@ -212,7 +212,7 @@ ViewVisitorStatus As screen:
             FontWeight: =FontWeight.Semibold
             Height: =41
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Gender.Value
+            Text: =LookUp(VisitorInformation,'Full Name'=VisitorfullName.Text,Gender.Value)
             Width: =90
             Wrap: =false
             X: =572
