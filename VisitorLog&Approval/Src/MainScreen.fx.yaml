@@ -3,13 +3,14 @@ MainScreen As screen:
     ImagePosition: =ImagePosition.Fill
 
     appName As label:
+        Align: =Align.Center
         Color: =RGBA(39, 113, 194, 1)
         Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =74
         Size: =45
         Text: ="Visitor Application"
-        Width: =555
+        Width: =536
         X: =79
         Y: =163
         ZIndex: =3
