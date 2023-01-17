@@ -10,8 +10,7 @@ MainScreen As screen:
         Height: =74
         Size: =45
         Text: ="Visitor Application"
-        Width: =536
-        X: =79
+        Width: =666
         Y: =163
         ZIndex: =3
 
@@ -31,8 +30,8 @@ MainScreen As screen:
         Size: =22
         Text: ="New Visitor"
         Width: =372
-        X: =139
-        Y: =286
+        X: =145
+        Y: =276
         ZIndex: =4
 
     regularVisitor As button:
@@ -53,8 +52,8 @@ MainScreen As screen:
         Size: =22
         Text: ="Regular Visitor"
         Width: =372
-        X: =139
-        Y: =436
+        X: =145
+        Y: =426
         ZIndex: =5
 
     securitycheck As button:
@@ -73,12 +72,12 @@ MainScreen As screen:
         Text: ="Security Check"
         Visible: =isUserAdminSPList
         Width: =372
-        X: =139
-        Y: =579
+        X: =145
+        Y: =569
         ZIndex: =6
 
     logo_1 As logo:
-        X: =139
+        X: =146
         Y: =65
         ZIndex: =7
 
