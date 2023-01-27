@@ -31,7 +31,7 @@ NewVisitorScreen As screen:
                         
                     ),
                     //If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber_1.Text)),
-                    If(IsEmpty(CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))=0),
+                    If(IsEmpty(CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))>0),
                         Notify("Phone Number already exists. Enter your correct phone number."),
                         
                         Patch(
