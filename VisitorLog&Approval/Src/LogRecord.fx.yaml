@@ -165,8 +165,7 @@ LogRecord As screen:
             Text: =ThisItem.'Visitor Name'
             Width: =186
             Wrap: =false
-            X: =12
-            Y: =14
+            X: =22
             ZIndex: =2
 
         visitorcompanyName_1 As label:
@@ -181,8 +180,7 @@ LogRecord As screen:
             Text: =ThisItem.'Visitor Company'
             Width: =162
             Wrap: =false
-            X: =216
-            Y: =14
+            X: =226
             ZIndex: =3
 
         visReason_1 As label:
@@ -197,8 +195,7 @@ LogRecord As screen:
             Text: =ThisItem.'Reason For Visit'.Value
             Width: =123
             Wrap: =false
-            X: =418
-            Y: =14
+            X: =428
             ZIndex: =4
 
         sex_1 As label:
@@ -213,8 +210,7 @@ LogRecord As screen:
             Text: =ThisItem.Gender.Value
             Width: =90
             Wrap: =false
-            X: =572
-            Y: =14
+            X: =582
             ZIndex: =5
 
         visitingWhom_1 As label:
@@ -229,8 +225,7 @@ LogRecord As screen:
             Text: =ThisItem.'Person To Visit'
             Width: =208
             Wrap: =false
-            X: =662
-            Y: =14
+            X: =672
             ZIndex: =6
 
         createTiming_1 As label:
@@ -245,8 +240,7 @@ LogRecord As screen:
             Text: =ThisItem.Created
             Width: =208
             Wrap: =false
-            X: =851
-            Y: =14
+            X: =861
             ZIndex: =7
 
         visitStatus_1 As label:
@@ -262,7 +256,6 @@ LogRecord As screen:
             Width: =220
             Wrap: =false
             X: =1055
-            Y: =9
             ZIndex: =8
 
         nextBtn_1 As arrow:
@@ -270,8 +263,7 @@ LogRecord As screen:
             OnSelect: |-
                 =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
                 If(visitStatus_1.Text = "Visit Completed",Navigate(VisitorCheckScreen), Navigate(VisitorCheckScreen))
-            X: =1274
-            Y: =11
+            X: =1284
             ZIndex: =9
 
     fromDate_1 As datepicker:

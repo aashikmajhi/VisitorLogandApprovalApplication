@@ -1147,7 +1147,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "createTiming_1",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3814,7 +3814,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "nextBtn_1",
-      "ParentIndex": 2,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5245,7 +5245,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "sex_1",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6265,7 +6265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "visitingWhom_1",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6616,7 +6616,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "visitorcompanyName_1",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6967,7 +6967,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "VisitorfullName_1",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7615,7 +7615,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "visitStatus_1",
-      "ParentIndex": 1,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7966,7 +7966,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "visReason_1",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
