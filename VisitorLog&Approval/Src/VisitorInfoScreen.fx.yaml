@@ -430,7 +430,7 @@ VisitorInfoScreen As screen:
                     ="- Sore Throat
                     - Dry Cough 
                     - Fever
-                    - Tireness"
+                    - Tiredness"
                 X: =30
                 Y: =74
                 ZIndex: =6
