@@ -23,7 +23,9 @@ NewVisitorScreen As screen:
         Font: =Font.'Lato Black'
         Height: =58
         OnSelect: |
-            =If(
+            =If(IsEmpty(CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))>0),
+            Notify("Phone Number already exists"),NotificationType.Error);
+            If(
                 !IsEmpty(Errors(VisitorInformation)),
                     Notify(
                         First(Errors(VisitorInformation)).Message,
