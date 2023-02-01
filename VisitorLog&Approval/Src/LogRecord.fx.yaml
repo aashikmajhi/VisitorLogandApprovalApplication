@@ -317,6 +317,7 @@ LogRecord As screen:
         ZIndex: =18
 
     companyName_6 As companyName:
+        Width: =966
         X: =208
         Y: =10
         ZIndex: =19

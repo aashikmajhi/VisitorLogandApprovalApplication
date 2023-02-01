@@ -679,6 +679,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =5
 
     companyName_4 As companyName:
+        Width: =966
         X: =213
         Y: =20
         ZIndex: =7
