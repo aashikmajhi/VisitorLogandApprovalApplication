@@ -594,8 +594,9 @@ NewVisitorScreen As screen:
                 ZIndex: =5
 
     companyName_7 As companyName:
-        X: =213
-        Y: =20
+        Width: =966
+        X: =219
+        Y: =21
         ZIndex: =7
 
     visitorsDetail_2 As form:
