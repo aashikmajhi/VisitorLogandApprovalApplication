@@ -23,35 +23,53 @@ NewVisitorScreen As screen:
         Font: =Font.'Lato Black'
         Height: =58
         OnSelect: |
-            =If(IsEmpty(CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))>0),
-            Notify("Phone Number already exists"),NotificationType.Error);
+            =If(
+                IsEmpty(
+                    CountRows(
+                        Filter(
+                            VisitorPhoneNumber,
+                            'Phone Number' = visitorPhoneNumber_1.Text
+                        )
+                    ) > 0
+                ),
+                Notify("Phone Number already exists"),
+                NotificationType.Error
+            );
             If(
                 !IsEmpty(Errors(VisitorInformation)),
-                    Notify(
-                        First(Errors(VisitorInformation)).Message,
-                        NotificationType.Error
-                        
-                    ),
+                Notify(
+                    First(Errors(VisitorInformation)).Message,
+                    NotificationType.Error
+                ),
                     //If(IsEmpty(LookUp(VisitorInformation, 'Phone Number' = visitorPhoneNumber_1.Text)),
-                    If(IsEmpty(CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber_1.Text))>0),
-                        Notify("Phone Number already exists. Enter your correct phone number."),
-                        
-                        Patch(
-                            VisitorInformation,{ID: Blank()},
-                            visitorsDetail_1.Updates, visitorsDetail_2.Updates
-                        );   
-                        Office365Outlook.SendEmailV2(visitorEmail_1,"Visitor Registration to Astral Computers Nepal Pvt. Ltd.","You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link),
-            
-                        
-                        ResetForm(visitorsDetail_1);
-                        ResetForm(visitorsDetail_2);
-                        Navigate(VisitorInfoScreen)
-                    ) 
-                    &&        
-                    Notify(
-                        "Success",
-                        NotificationType.Success
-                    )   
+                If(
+                    IsEmpty(
+                        CountRows(
+                            Filter(
+                                VisitorPhoneNumber,
+                                'Phone Number' = visitorPhoneNumber_1.Text
+                            )
+                        ) > 0
+                    ),
+                    Notify("Phone Number already exists. Enter your correct phone number."),
+                    Patch(
+                        VisitorInformation,
+                        {ID: Blank()},
+                        visitorsDetail_1.Updates,
+                        visitorsDetail_2.Updates
+                    );
+                    Office365Outlook.SendEmailV2(
+                        visitorEmail_1,
+                        "Visitor Registration to Astral Computers Nepal Pvt. Ltd.",
+                        "You                          have been successfully registered as a visitor in the organization. Please checkin as a regular visitor with your                  phone number while visiting the organization. Thank You!" & Link
+                    ),
+                    ResetForm(visitorsDetail_1);
+                    ResetForm(visitorsDetail_2);
+                    Navigate(VisitorInfoScreen)
+                ) && Notify(
+                    "Success",
+                    NotificationType.Success
+                )
             );
         Size: =20
         Text: ="Submit"
@@ -656,7 +674,7 @@ NewVisitorScreen As screen:
                 ZIndex: =5
 
             Camera2 As camera:
-                Camera: =0
+                Camera: =1
                 Height: =148
                 Width: =131
                 X: =424

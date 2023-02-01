@@ -155,7 +155,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =5
 
             Camera1 As camera:
-                Camera: =0
+                Camera: =1
                 Height: =145
                 OnSelect: =true
                 OnStream: =true

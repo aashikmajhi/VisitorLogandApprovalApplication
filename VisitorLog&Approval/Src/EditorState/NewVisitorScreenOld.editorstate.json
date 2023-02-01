@@ -595,7 +595,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "-1",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Camera",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
