@@ -568,7 +568,6 @@ VisitorInfoScreen As screen:
         ZIndex: =9
 
     companyName_3 As companyName:
-        Width: =966
         X: =210
         Y: =10
         ZIndex: =10

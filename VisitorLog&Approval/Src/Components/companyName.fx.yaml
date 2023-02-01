@@ -1,12 +1,13 @@
 companyName As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =98
-    Width: =940
+    Width: =966
     X: =0
     Y: =0
     ZIndex: =1
 
     companyName_1 As label:
+        Align: =Align.Center
         BorderStyle: =BorderStyle.None
         Color: =RGBA(39, 113, 194, 1)
         Font: =Font.'Segoe UI'
@@ -14,6 +15,6 @@ companyName As CanvasComponent:
         Height: =98
         Size: =45
         Text: ="Astral Computers Nepal Pvt. Ltd."
-        Width: =940
+        Width: =966
         ZIndex: =2
 

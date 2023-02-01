@@ -713,7 +713,6 @@ VisitorCheckScreen As screen:
         ZIndex: =9
 
     companyName_5 As companyName:
-        Width: =966
         X: =212
         Y: =18
         ZIndex: =10
