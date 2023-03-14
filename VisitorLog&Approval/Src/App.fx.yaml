@@ -14,6 +14,6 @@ App As appinfo:
                     Admin.Email = varUser.Email
                 )
             )
-        ) || Set( isUserAdminSPList, Email="sumit.manandhar@astral.com.np")
+        ) || Set( isUserAdminSPList, Match.Email="sumit.manandhar@astral.com.np")
     StartScreen: =MainScreen
 

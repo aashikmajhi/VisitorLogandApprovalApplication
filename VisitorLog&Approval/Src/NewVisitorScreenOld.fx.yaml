@@ -174,7 +174,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =7
 
             right_5 As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(Image2), Icon.Check, Icon.Cancel)
@@ -257,7 +257,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =5
 
             right As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(salutation.Selected.Value), Icon.Check, Icon.Cancel)
@@ -406,7 +406,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =4
 
             right_1 As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: =If(!IsBlank(visitorFullName.Text), Icon.Check, Icon.Cancel)
@@ -487,7 +487,7 @@ NewVisitorScreenOld As screen:
                 ZIndex: =4
 
             right_3 As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: = If(!IsBlank(visitorCompany.Text), Icon.Check, Icon.Cancel)
@@ -579,13 +579,13 @@ NewVisitorScreenOld As screen:
                 ZIndex: =4
 
             right_2 As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
                 Icon: |-
                     = If(!IsBlank(visitorEmail.Text)&&IsMatch(
                             visitorEmail.Text,
-                            Email),Icon.Check, Icon.Cancel)
+                            Match.Email),Icon.Check, Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12
@@ -669,10 +669,10 @@ NewVisitorScreenOld As screen:
                 ZIndex: =4
 
             right_4 As icon.Check:
-                Color: =If(Self.Icon=Icon.Check, Green, Red)
+                Color: =If(Self.Icon=Icon.Check, Color.Green, Color.Red)
                 DisplayMode: =DisplayMode.View
                 Height: =38
-                Icon: =If(!IsBlank(visitorPhoneNumber.Text) && IsMatch(visitorPhoneNumber.Text,Digit & Digit & Digit & Digit & Digit & Digit & Digit &Digit & Digit & Digit) && CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber.Text))<=0,Icon.Check,Icon.Cancel)
+                Icon: =If(!IsBlank(visitorPhoneNumber.Text) && IsMatch(visitorPhoneNumber.Text,Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit &Match.Digit & Match.Digit & Match.Digit) && CountRows(Filter(VisitorPhoneNumber,'Phone Number'=visitorPhoneNumber.Text))<=0,Icon.Check,Icon.Cancel)
                 Width: =46
                 X: =578
                 Y: =12

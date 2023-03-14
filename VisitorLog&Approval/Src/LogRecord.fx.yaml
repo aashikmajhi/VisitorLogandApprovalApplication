@@ -136,7 +136,7 @@ LogRecord As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =3
         Height: =475
-        Items: =If(searchVisitedEmployee_1.Selected.DisplayName<>Blank(),SortByColumns(Filter(createdToday, 'Person To Visit'=searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created",Descending),If(searchVisitedEmployee_1.Selected.DisplayName<>IsBlank("") && searchVisitedEmployee_1.Selected.DisplayName=IsBlank(""),SortByColumns(Filter(createdToday, 'Person To Visit' = searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created", Descending),SortByColumns(Filter(createdToday, Created>=fromDate_1.SelectedDate && Created<=toDate_1.SelectedDate,1,Days), "Created", Ascending)))
+        Items: =If(searchVisitedEmployee_1.Selected.DisplayName<>Blank(),SortByColumns(Filter(createdToday, 'Person To Visit'=searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created",SortOrder.Descending),If(searchVisitedEmployee_1.Selected.DisplayName<>IsBlank("") && searchVisitedEmployee_1.Selected.DisplayName=IsBlank(""),SortByColumns(Filter(createdToday, 'Person To Visit' = searchVisitedEmployee_1.Selected.DisplayName || (IsToday(Created)) && 'Visit Status'.Value<>"Visit Completed"),"Created", SortOrder.Descending),SortByColumns(Filter(createdToday, Created>=fromDate_1.SelectedDate && Created<=toDate_1.SelectedDate,1,TimeUnit.Days), "Created", SortOrder.Ascending)))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =65
@@ -259,7 +259,7 @@ LogRecord As screen:
             ZIndex: =8
 
         nextBtn_1 As arrow:
-            Fill: =Switch(ThisItem.'Visit Status'.Value,"Visit Completed",Green,"Pending Security Check",Red,"Security Check Completed",Blue)
+            Fill: =Switch(ThisItem.'Visit Status'.Value,"Visit Completed",Color.Green,"Pending Security Check",Color.Red,"Security Check Completed",Color.Blue)
             OnSelect: |-
                 =Set(varFormMode, FormMode.Edit);Set(varItem,ThisItem);
                 If(visitStatus_1.Text = "Visit Completed",Navigate(VisitorCheckScreen), Navigate(VisitorCheckScreen))

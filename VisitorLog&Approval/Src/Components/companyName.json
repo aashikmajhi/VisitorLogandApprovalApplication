@@ -400,7 +400,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638108228739021124",
+    "LastModifiedTimestamp": "638143826355236516",
     "Name": "companyName",
     "Rules": [
       {
@@ -419,7 +419,7 @@
         "Category": "Design",
         "InvariantScript": "966",
         "Property": "Width",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -459,7 +459,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638108228739021124",
+  "LastModifiedTimestamp": "638143826355236516",
   "Name": "8a76fa89713c41bc80b2a4553b040a61",
   "OverridableProperties": {},
   "TemplateOriginalName": "9c3bab715be14b0e8f6e1546d785303a",

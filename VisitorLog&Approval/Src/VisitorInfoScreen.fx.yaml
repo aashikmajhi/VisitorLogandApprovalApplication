@@ -76,7 +76,7 @@ VisitorInfoScreen As screen:
 
             StarVisible29 As label:
                 Align: =Align.Center
-                Color: =If(IsBlank(employeeName.Text),Red, Green)
+                Color: =If(IsBlank(employeeName.Text),Color.Red, Color.Green)
                 Height: =DataCardKey29.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -123,7 +123,7 @@ VisitorInfoScreen As screen:
                           {
                              wResult: 
                              Concat(
-                                Distinct(
+                                ForAll(Distinct(
                                    Filter(
                                       VisitorInformation,
                                       StartsWith(
@@ -132,7 +132,7 @@ VisitorInfoScreen As screen:
                                       )
                                    ),
                                    'Full Name'
-                                ),
+                                ), {Result: ThisRecord.Value}),
                                 Result & ", "
                              )
                           },
@@ -174,7 +174,7 @@ VisitorInfoScreen As screen:
 
             StarVisible8 As label:
                 Align: =Align.Center
-                Color: =If(IsBlank(visitorName.Text),Red,Green)
+                Color: =If(IsBlank(visitorName.Text),Color.Red,Color.Green)
                 FontWeight: =FontWeight.Bold
                 Height: =DataCardKey8.Height
                 Text: ="*"
@@ -222,7 +222,7 @@ VisitorInfoScreen As screen:
                           {
                              wResult: 
                              Concat(
-                                Distinct(
+                                ForAll(Distinct(
                                    Filter(
                                       VisitorInformation,
                                       StartsWith(
@@ -231,7 +231,7 @@ VisitorInfoScreen As screen:
                                       )
                                    ),
                                    Company
-                                ),
+                                ), {Result: ThisRecord.Value}),
                                 Result & ", "
                              )
                           },
@@ -275,7 +275,7 @@ VisitorInfoScreen As screen:
 
             StarVisible9 As label:
                 Align: =Align.Center
-                Color: =If(IsBlank(vistorCompanyName.Text),Red,Green)
+                Color: =If(IsBlank(vistorCompanyName.Text),Color.Red,Color.Green)
                 Height: =DataCardKey9.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -353,7 +353,7 @@ VisitorInfoScreen As screen:
 
             StarVisible10 As label:
                 Align: =Align.Center
-                Color: =If(IsBlank(reason.Selected.Value),Red,Green)
+                Color: =If(IsBlank(reason.Selected.Value),Color.Red,Color.Green)
                 Height: =DataCardKey10.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -406,7 +406,7 @@ VisitorInfoScreen As screen:
 
             StarVisible11 As label:
                 Align: =Align.Center
-                Color: =If(IsBlank(symptoms.Selected.Value),Red,Green)
+                Color: =If(IsBlank(symptoms.Selected.Value),Color.Red,Color.Green)
                 Height: =DataCardKey11.Height
                 Text: ="*"
                 Width: =30
@@ -519,7 +519,7 @@ VisitorInfoScreen As screen:
     btnSubmit_1 As button:
         DisabledColor: =RGBA(22, 38, 50, 1)
         DisabledFill: =RGBA(193, 200, 206, 1)
-        DisplayMode: =If(regularVisitorsDetail.Valid,DisplayMode.Edit,Disabled)
+        DisplayMode: =If(regularVisitorsDetail.Valid,DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =RGBA(54, 176, 75, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'

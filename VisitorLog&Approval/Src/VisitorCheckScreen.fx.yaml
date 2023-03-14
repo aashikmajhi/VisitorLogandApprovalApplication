@@ -96,7 +96,7 @@ VisitorCheckScreen As screen:
 
             StarVisible14 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(DataCardValue2.Text),Red,Green)
+                Color: =If(!IsBlank(DataCardValue2.Text),Color.Red,Color.Green)
                 Height: =DataCardKey14.Height
                 Text: ="*"
                 Visible: =false
@@ -158,7 +158,7 @@ VisitorCheckScreen As screen:
 
             StarVisible15 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(Image5.Image),Red,Green)
+                Color: =If(!IsBlank(Image5.Image),Color.Red,Color.Green)
                 Height: =DataCardKey15.Height
                 Text: ="*"
                 Visible: =false
@@ -316,7 +316,7 @@ VisitorCheckScreen As screen:
 
             StarVisible17 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(visitorName.Text),Red,Green)
+                Color: =If(!IsBlank(visitorName.Text),Color.Red,Color.Green)
                 Height: =DataCardKey17.Height
                 Text: ="*"
                 Visible: =false
@@ -387,7 +387,7 @@ VisitorCheckScreen As screen:
 
             StarVisible18 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(vistorCompanyName.Text),Red,Green)
+                Color: =If(!IsBlank(vistorCompanyName.Text),Color.Red,Color.Green)
                 Height: =DataCardKey18.Height
                 Text: ="*"
                 Visible: =false
@@ -458,7 +458,7 @@ VisitorCheckScreen As screen:
 
             StarVisible21 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(whomVisited.Text),Red,Green)
+                Color: =If(!IsBlank(whomVisited.Text),Color.Red,Color.Green)
                 Height: =DataCardKey21.Height
                 Text: ="*"
                 Visible: =false
@@ -530,7 +530,7 @@ VisitorCheckScreen As screen:
 
             StarVisible19 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(purposeofvisit.Selected.Value),Red,Green)
+                Color: =If(!IsBlank(purposeofvisit.Selected.Value),Color.Red,Color.Green)
                 Height: =DataCardKey19.Height
                 Text: ="*"
                 Visible: =false
@@ -585,7 +585,7 @@ VisitorCheckScreen As screen:
 
             StarVisible22 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(visitorGender1.Selected),Red,Green)
+                Color: =If(!IsBlank(visitorGender1.Selected),Color.Red,Color.Green)
                 Height: =DataCardKey22.Height
                 Text: ="*"
                 Visible: =false
@@ -673,7 +673,7 @@ VisitorCheckScreen As screen:
 
             StarVisible23 As label:
                 Align: =Align.Center
-                Color: =If(!IsBlank(DataCardValue23.Selected.Value),Red,Green)
+                Color: =If(!IsBlank(DataCardValue23.Selected.Value),Color.Red,Color.Green)
                 Height: =DataCardKey23.Height
                 Text: ="*"
                 Visible: =false
@@ -685,7 +685,7 @@ VisitorCheckScreen As screen:
     btnSubmit_3 As button:
         DisabledColor: =RGBA(22, 38, 50, 1)
         DisabledFill: =RGBA(193, 200, 206, 1)
-        DisplayMode: =If(visitorCheckForm.Valid,DisplayMode.Edit,Disabled)
+        DisplayMode: =If(visitorCheckForm.Valid,DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =RGBA(54, 176, 75, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
         Font: =Font.'Lato Black'
