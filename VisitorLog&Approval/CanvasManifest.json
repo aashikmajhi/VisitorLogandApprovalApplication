@@ -100,10 +100,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "07eefa1a-873c-4d2e-8579-158a897427fa",
-    "Id": "07eefa1a-873c-4d2e-8579-158a897427fa",
+    "Id": "4ff06133-e186-435c-8a27-df376ca80988",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Visitor Log App",
+    "Name": "Visitor+Log+App.msapp",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
