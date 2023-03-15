@@ -678,8 +678,10 @@ NewVisitorScreenOld As screen:
                 Y: =12
                 ZIndex: =5
 
-    companyName_4 As companyName:
-        X: =213
-        Y: =20
+    Image6 As image:
+        Image: =ThakralOne
+        Width: =788
+        X: =290
+        Y: =18
         ZIndex: =7
 

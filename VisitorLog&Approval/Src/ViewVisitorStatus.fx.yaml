@@ -276,8 +276,10 @@ ViewVisitorStatus As screen:
             Y: =11
             ZIndex: =9
 
-    companyName_2 As companyName:
-        X: =208
-        Y: =10
-        ZIndex: =19
+    Image6_2 As image:
+        Image: =ThakralOne
+        Width: =788
+        X: =290
+        Y: =18
+        ZIndex: =15
 

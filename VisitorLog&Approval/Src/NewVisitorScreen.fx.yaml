@@ -593,11 +593,6 @@ NewVisitorScreen As screen:
                 Y: =52
                 ZIndex: =5
 
-    companyName_7 As companyName:
-        X: =219
-        Y: =21
-        ZIndex: =7
-
     visitorsDetail_2 As form:
         AcceptsFocus: =false
         DataSource: =VisitorInformation
@@ -701,4 +696,11 @@ NewVisitorScreen As screen:
                 X: =378
                 Y: =1
                 ZIndex: =8
+
+    Image6_5 As image:
+        Image: =ThakralOne
+        Width: =788
+        X: =290
+        Y: =18
+        ZIndex: =9
 

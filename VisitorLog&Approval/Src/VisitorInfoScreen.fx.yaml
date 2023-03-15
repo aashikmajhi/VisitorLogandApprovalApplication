@@ -567,8 +567,10 @@ VisitorInfoScreen As screen:
         Y: =406
         ZIndex: =9
 
-    companyName_3 As companyName:
-        X: =210
-        Y: =10
+    Image6_4 As image:
+        Image: =ThakralOne
+        Width: =788
+        X: =290
+        Y: =18
         ZIndex: =10
 

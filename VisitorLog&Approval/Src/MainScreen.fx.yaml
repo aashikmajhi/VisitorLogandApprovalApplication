@@ -76,11 +76,6 @@ MainScreen As screen:
         Y: =569
         ZIndex: =6
 
-    logo_1 As logo:
-        X: =146
-        Y: =65
-        ZIndex: =7
-
     Image1 As image:
         Height: =572
         Image: ='ez-visit'
@@ -109,4 +104,12 @@ MainScreen As screen:
         X: =782
         Y: =98
         ZIndex: =10
+
+    Image3 As image:
+        Height: =123
+        Image: =ThakralOne
+        Width: =570
+        X: =48
+        Y: =40
+        ZIndex: =11
 
