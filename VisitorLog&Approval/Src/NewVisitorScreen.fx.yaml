@@ -538,9 +538,9 @@ NewVisitorScreen As screen:
             Required: =false
             Update: =visitorGender_1.Selected
             Visible: =false
-            Width: =1273
+            Width: =666
             X: =0
-            Y: =5
+            Y: =450
             ZIndex: =6
 
             DataCardKey4_1 As label:
