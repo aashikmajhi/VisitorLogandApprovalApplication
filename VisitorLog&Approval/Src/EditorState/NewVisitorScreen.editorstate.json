@@ -7624,7 +7624,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "right_9",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10396,7 +10396,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "visitorCompany_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
